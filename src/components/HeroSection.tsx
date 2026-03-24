@@ -1,36 +1,69 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Star } from "lucide-react";
 import heroImg from "@/assets/hero-gym.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex flex-col overflow-hidden">
       <img
         src={heroImg}
         alt="Personal training at Eternal Fitness"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-hero-overlay/70" />
+      <div className="absolute inset-0 bg-hero-overlay/65" />
 
-      <div className="relative z-10 text-center max-w-2xl px-6">
-        <h1 className="font-display text-4xl md:text-6xl text-primary-foreground leading-tight mb-4">
-          Frequently Asked Questions
-        </h1>
-        <p className="text-primary-foreground/70 font-body text-lg md:text-xl mb-8 max-w-lg mx-auto">
-          Reduce friction and answer common concerns. Reduce friction and answer common concerns.
-        </p>
-        <div className="flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
-          >
-            Book an Initial Consultation
-          </a>
-          <a
-            href="#faq"
-            className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-7 py-3 rounded-full font-medium hover:bg-primary-foreground/10 transition-colors"
-          >
-            Visit the Studio
-          </a>
+      {/* Main content */}
+      <div className="relative z-10 flex-1 flex items-center justify-center text-center px-6 pt-24">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-5">
+            Personal Training in Worthing Focusing on Wellbeing &amp; Strength
+          </h1>
+          <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">
+            A private fitness studio built for people who want to move better, feel stronger, and live with confidence physically and mentally.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+            >
+              Book an Initial Consultation
+            </a>
+            <a
+              href="#why"
+              className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-7 py-3 rounded-full font-medium hover:bg-primary-foreground/10 transition-colors"
+            >
+              Visit the Studio
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Social proof bar */}
+      <div className="relative z-10 px-6 pb-8 pt-12">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* Stat */}
+          <div className="bg-background/10 backdrop-blur-md rounded-2xl p-5 flex items-center gap-4 border border-primary-foreground/10">
+            <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+              <Star className="w-5 h-5 text-primary" />
+            </div>
+            <div>
+              <p className="text-primary-foreground font-bold text-xl">200,000+</p>
+              <p className="text-primary-foreground/60 text-xs">Reviews and ratings from other Eternal Fitness clients. See how we can support you.</p>
+            </div>
+          </div>
+
+          {/* Quote */}
+          <div className="bg-background/10 backdrop-blur-md rounded-2xl p-5 border border-primary-foreground/10">
+            <p className="text-primary-foreground/80 text-sm italic mb-2">
+              "This might be the best gym I've ever been to. Great atmosphere and I was hooked from day one."
+            </p>
+            <p className="text-primary-foreground font-semibold text-xs">Wendy, Durbin · <span className="text-primary-foreground/50">Mar 2, 2025</span></p>
+          </div>
+
+          {/* Filter CTA */}
+          <div className="bg-primary rounded-2xl p-5 flex flex-col justify-center">
+            <h4 className="text-primary-foreground text-lg mb-1">Filter the list</h4>
+            <p className="text-primary-foreground/80 text-xs">Our studios, gym, beauty salons and spas in your postcode. Select filter.</p>
+          </div>
         </div>
       </div>
     </section>
