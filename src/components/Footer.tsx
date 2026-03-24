@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
 
 const Footer = () => {
@@ -6,9 +7,9 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <span className="font-display text-xl italic text-foreground">
+          <Link to="/" className="font-display text-xl italic text-foreground">
             Eternal <span className="text-primary">♥</span> Fitness
-          </span>
+          </Link>
 
           <div className="mt-6 space-y-3">
             <h4 className="font-body font-semibold text-foreground text-sm">Contact</h4>
@@ -25,10 +26,10 @@ const Footer = () => {
         <div>
           <h4 className="font-body font-semibold text-foreground text-sm mb-4">Navigation</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li className="hover:text-foreground transition-colors cursor-pointer">Personal Training in Worthing</li>
-            <li className="hover:text-foreground transition-colors cursor-pointer">Mobility & Strength Coaching</li>
-            <li className="hover:text-foreground transition-colors cursor-pointer">Injury Recovery & Cancer Rehabilitation</li>
-            <li className="hover:text-foreground transition-colors cursor-pointer">Private Training Studio in Worthing</li>
+            <li><Link to="/" className="hover:text-foreground transition-colors">Personal Training in Worthing</Link></li>
+            <li><Link to="/" className="hover:text-foreground transition-colors">Mobility & Strength Coaching</Link></li>
+            <li><Link to="/" className="hover:text-foreground transition-colors">Injury Recovery & Cancer Rehabilitation</Link></li>
+            <li><Link to="/" className="hover:text-foreground transition-colors">Private Training Studio in Worthing</Link></li>
           </ul>
         </div>
 
@@ -36,8 +37,8 @@ const Footer = () => {
         <div>
           <h4 className="font-body font-semibold text-foreground text-sm mb-4">Help</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li className="hover:text-foreground transition-colors cursor-pointer">FAQs</li>
-            <li className="hover:text-foreground transition-colors cursor-pointer">Contact</li>
+            <li><Link to="/" className="hover:text-foreground transition-colors">FAQs</Link></li>
+            <li><Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link></li>
           </ul>
         </div>
 
@@ -61,8 +62,8 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <span>Copyright © 2023 Nutrition Basic Co. | All Rights Reserved</span>
         <div className="flex gap-4">
-          <span className="hover:text-foreground cursor-pointer transition-colors">Privacy Policy</span>
-          <span className="hover:text-foreground cursor-pointer transition-colors">Terms of Use</span>
+          <Link to="/terms" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+          <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Use</Link>
         </div>
       </div>
     </footer>
