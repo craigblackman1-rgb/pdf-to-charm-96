@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const navItems = ["Home", "About", "Personal Training", "FAQs", "Blog"];
@@ -21,12 +22,12 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <a
-        href="#contact"
+      <Link
+        to="/contact"
         className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
       >
         Contact Us <ArrowUpRight className="w-4 h-4" />
-      </a>
+      </Link>
 
       {/* Mobile toggle */}
       <button onClick={() => setOpen(!open)} className="md:hidden text-primary-foreground">
