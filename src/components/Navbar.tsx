@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const navItems = ["Home", "About", "Personal Training", "FAQs", "Blog"];
