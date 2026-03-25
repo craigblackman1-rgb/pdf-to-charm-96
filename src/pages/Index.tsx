@@ -7,19 +7,24 @@ import WhoSection from "@/components/WhoSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import ConsultationDialog from "@/components/ConsultationDialog";
+import { useConsultationDialog } from "@/hooks/useConsultationDialog";
 
 const Index = () => {
+  const { open, setOpen, openDialog } = useConsultationDialog();
+
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      <HeroSection />
+      <Navbar onBookConsultation={openDialog} />
+      <HeroSection onBookConsultation={openDialog} />
       <WhySection />
       <SpecialiseSection />
       <ApproachSection />
       <WhoSection />
       <TestimonialsSection />
-      <CTASection />
+      <CTASection onBookConsultation={openDialog} />
       <Footer />
+      <ConsultationDialog open={open} onOpenChange={setOpen} />
     </div>
   );
 };

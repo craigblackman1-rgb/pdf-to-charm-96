@@ -2,6 +2,8 @@ import { ArrowUpRight, ChevronLeft, ChevronRight, ClipboardList, Search, BarChar
 import Navbar from "@/components/Navbar";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import ConsultationDialog from "@/components/ConsultationDialog";
+import { useConsultationDialog } from "@/hooks/useConsultationDialog";
 import ptHero from "@/assets/pt-hero.jpg";
 import approachPrivate from "@/assets/approach-private.jpg";
 import strengthImg from "@/assets/strength-tasks.jpg";
@@ -45,9 +47,11 @@ const steps = [
 ];
 
 const PersonalTraining = () => {
+  const { open, setOpen, openDialog } = useConsultationDialog();
+
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
+      <Navbar onBookConsultation={openDialog} />
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
@@ -61,9 +65,12 @@ const PersonalTraining = () => {
             Private 1:1 coaching focused on strength, mobility, and confidence in movement. No extremes. No pressure. Just steady progress that fits real life.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity">
+            <button
+              onClick={openDialog}
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+            >
               Book a Free Consultation
-            </a>
+            </button>
             <a href="#what" className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-7 py-3 rounded-full font-medium hover:bg-primary-foreground/10 transition-colors">
               Ask a Question
             </a>
@@ -88,9 +95,12 @@ const PersonalTraining = () => {
                   Personal Training at Eternal Fitness is a private, calm, studio-based experience built around long-term wellbeing, not quick transformations. Unlike traditional gym personal training that can feel rushed, crowded, or performance-focused, our sessions are intentionally personalised and paced to suit your body, lifestyle, and confidence level.
                 </p>
               </div>
-              <a href="/contact" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity">
+              <button
+                onClick={openDialog}
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+              >
                 Book Now <ArrowUpRight className="w-4 h-4" />
-              </a>
+              </button>
             </div>
             <div className="grid grid-cols-2 gap-3">
               <img src={strengthImg} alt="Strength training" loading="lazy" className="rounded-2xl w-full h-64 object-cover" />
@@ -168,8 +178,9 @@ const PersonalTraining = () => {
         </div>
       </section>
 
-      <CTASection />
+      <CTASection onBookConsultation={openDialog} />
       <Footer />
+      <ConsultationDialog open={open} onOpenChange={setOpen} />
     </div>
   );
 };
