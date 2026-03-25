@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import ctaImg from "@/assets/cta-gym.jpg";
+import ctaImg from "@/assets/studio-1.jpg";
 
 interface CTASectionProps {
   onBookConsultation?: () => void;
