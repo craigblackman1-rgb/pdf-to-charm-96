@@ -7,10 +7,14 @@ const Footer = () => {
     <footer id="contact" className="bg-background border-t border-border py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
-        <div>
-          <Link to="/" className="font-display text-xl italic text-foreground">
-            Eternal <span className="text-primary">♥</span> Fitness
-          </Link>
+        <div className="flex gap-4">
+          <img src={studioImg} alt="Eternal Fitness studio" className="w-20 h-20 rounded-lg object-cover flex-shrink-0" />
+          <div>
+            <Link to="/" className="font-display text-xl italic text-foreground">
+              Eternal <span className="text-primary">♥</span> Fitness
+            </Link>
+          </div>
+        </div>
 
           <div className="mt-6 space-y-3">
             <h4 className="font-body font-semibold text-foreground text-sm">Contact</h4>
