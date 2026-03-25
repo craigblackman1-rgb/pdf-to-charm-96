@@ -1,7 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
 import ctaImg from "@/assets/cta-gym.jpg";
 
-const CTASection = () => {
+interface CTASectionProps {
+  onBookConsultation?: () => void;
+}
+
+const CTASection = ({ onBookConsultation }: CTASectionProps) => {
   return (
     <section className="relative overflow-hidden">
       <div className="grid md:grid-cols-2 min-h-[420px]">
@@ -24,12 +28,21 @@ const CTASection = () => {
               Ready to move better, feel stronger, and rebuild confidence in your body? Book your initial consultation today from our private, fully equipped Worthing studio.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
-              >
-                Book Now <ArrowUpRight className="w-4 h-4" />
-              </a>
+              {onBookConsultation ? (
+                <button
+                  onClick={onBookConsultation}
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+                >
+                  Book Now <ArrowUpRight className="w-4 h-4" />
+                </button>
+              ) : (
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+                >
+                  Book Now <ArrowUpRight className="w-4 h-4" />
+                </a>
+              )}
               <a
                 href="tel:07517658128"
                 className="inline-flex items-center gap-2 border border-accent-foreground/40 text-accent-foreground px-6 py-3 rounded-full font-medium hover:bg-accent-foreground/10 transition-colors"

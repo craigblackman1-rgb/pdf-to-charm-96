@@ -4,13 +4,17 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const navItems = [
   { label: "Home", to: "/" },
-  { label: "About", to: "/" },
+  { label: "About", to: "/about" },
   { label: "Personal Training", to: "/personal-training" },
   { label: "FAQs", to: "/faqs" },
   { label: "Blog", to: "/" },
 ];
 
-const Navbar = () => {
+interface NavbarProps {
+  onBookConsultation?: () => void;
+}
+
+const Navbar = ({ onBookConsultation }: NavbarProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -30,12 +34,21 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <Link
-        to="/contact"
-        className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
-      >
-        Contact Us <ArrowUpRight className="w-4 h-4" />
-      </Link>
+      {onBookConsultation ? (
+        <button
+          onClick={onBookConsultation}
+          className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+        >
+          Contact Us <ArrowUpRight className="w-4 h-4" />
+        </button>
+      ) : (
+        <Link
+          to="/contact"
+          className="hidden md:inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity"
+        >
+          Contact Us <ArrowUpRight className="w-4 h-4" />
+        </Link>
+      )}
 
       {/* Mobile toggle */}
       <button onClick={() => setOpen(!open)} className="md:hidden text-primary-foreground">
@@ -50,9 +63,18 @@ const Navbar = () => {
               {item.label}
             </Link>
           ))}
-          <Link to="/contact" onClick={() => setOpen(false)} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium w-fit">
-            Contact Us <ArrowUpRight className="w-4 h-4" />
-          </Link>
+          {onBookConsultation ? (
+            <button
+              onClick={() => { setOpen(false); onBookConsultation(); }}
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium w-fit"
+            >
+              Contact Us <ArrowUpRight className="w-4 h-4" />
+            </button>
+          ) : (
+            <Link to="/contact" onClick={() => setOpen(false)} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium w-fit">
+              Contact Us <ArrowUpRight className="w-4 h-4" />
+            </Link>
+          )}
         </div>
       )}
     </nav>
