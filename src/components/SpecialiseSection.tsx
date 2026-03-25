@@ -2,16 +2,16 @@ import s1 from "@/assets/specialise-1.jpg";
 import s2 from "@/assets/specialise-2.jpg";
 import s3 from "@/assets/specialise-3.jpg";
 import heroImg from "@/assets/hero-gym.jpg";
-import ctaImg from "@/assets/cta-gym.jpg";
 import mobilityImg from "@/assets/mobility-movement.jpg";
+import studioImg from "@/assets/studio-2.jpg";
 
 const images = [
-  { src: s1, label: "Mobility & Movement", span: "col-span-2 row-span-2" },
-  { src: s2, label: null, span: "" },
-  { src: s3, label: null, span: "" },
-  { src: heroImg, label: null, span: "" },
-  { src: ctaImg, label: null, span: "col-span-2" },
-  { src: mobilityImg, label: null, span: "" },
+  { src: s1, label: "Mobility & Movement", desc: "Programmes designed to improve movement, strength, and confidence.", span: "col-span-2 row-span-2" },
+  { src: s2, label: null, desc: null, span: "" },
+  { src: s3, label: null, desc: null, span: "" },
+  { src: heroImg, label: null, desc: null, span: "" },
+  { src: studioImg, label: null, desc: null, span: "" },
+  { src: mobilityImg, label: null, desc: null, span: "col-span-2" },
 ];
 
 const SpecialiseSection = () => {
@@ -42,7 +42,7 @@ const SpecialiseSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-4">
                     <h4 className="text-primary-foreground text-sm">{img.label}</h4>
-                    <p className="text-primary-foreground/70 text-xs mt-1">Programmes designed to improve movement, strength, and confidence.</p>
+                    <p className="text-primary-foreground/70 text-xs mt-1">{img.desc}</p>
                   </div>
                 </>
               )}
