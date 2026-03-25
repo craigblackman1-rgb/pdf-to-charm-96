@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
-import studioImg from "@/assets/studio-1.jpg";
+
 
 const Footer = () => {
   return (
