@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
-import studioImg from "@/assets/studio-1.jpg";
+
 
 const Footer = () => {
   return (
@@ -8,12 +8,9 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div>
-          <div className="flex gap-4 items-start">
-            <img src={studioImg} alt="Eternal Fitness studio" className="w-20 h-20 rounded-lg object-cover flex-shrink-0" />
-            <Link to="/" className="font-display text-xl italic text-foreground">
-              Eternal <span className="text-primary">♥</span> Fitness
-            </Link>
-          </div>
+          <Link to="/" className="font-display text-xl italic text-foreground">
+            Eternal <span className="text-primary">♥</span> Fitness
+          </Link>
 
           <div className="mt-6 space-y-3">
             <h4 className="font-body font-semibold text-foreground text-sm">Contact</h4>
