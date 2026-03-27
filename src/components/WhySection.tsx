@@ -3,9 +3,9 @@ import strengthImg from "@/assets/strength-tasks.jpg";
 import mindBodyImg from "@/assets/mind-body.jpg";
 
 const cards = [
-  { title: "Mobility and functional movement", image: mobilityImg },
-  { title: "Strength for everyday tasks", image: strengthImg },
-  { title: "Mind-body wellbeing", image: mindBodyImg },
+  { title: "Specialist in complex health conditions", image: mobilityImg },
+  { title: "Strength and mobility for real life", image: strengthImg },
+  { title: "Calm, private, one-to-one training", image: mindBodyImg },
 ];
 
 const WhySection = () => {
@@ -15,12 +15,12 @@ const WhySection = () => {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-12">
           <div>
             <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-4">
-              ✦ Focus
+              ✦ Why Eternal Fitness
             </span>
-            <h2 className="text-3xl md:text-4xl text-foreground">Why Eternal Fitness?</h2>
+            <h2 className="text-3xl md:text-4xl text-foreground">Training That Meets You Where You Are</h2>
           </div>
           <p className="text-muted-foreground font-body text-base max-w-md md:pt-8">
-            At Eternal Fitness, our primary mission is to create a body that supports daily life — walking, playing with kids, lifting groceries, recovering from injury, or feeling at ease in your skin.
+            Esther is a Level 4 personal trainer and exercise referral specialist. She works with people who have been turned away, overlooked, or simply never felt welcome in conventional fitness environments — because of a health condition, a disability, a complex medical history, or simply because they did not know where to start.
           </p>
         </div>
 

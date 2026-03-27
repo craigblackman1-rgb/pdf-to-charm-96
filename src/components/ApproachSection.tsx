@@ -1,34 +1,33 @@
 import privateImg from "@/assets/approach-private.jpg";
 import flexibleImg from "@/assets/approach-flexible.jpg";
 import consistencyImg from "@/assets/approach-consistency.jpg";
-import mindBodyImg from "@/assets/mind-body.jpg";
 
 const approaches = [
   {
     image: privateImg,
-    title: "Private 1-1 studio",
-    subtitle: "No crowds. No pressure.",
+    title: "Private 1-to-1 studio",
+    subtitle: "No gym floor. No other clients. No pressure to look or perform a certain way.",
   },
   {
     image: flexibleImg,
-    title: "Flexible training plans",
-    subtitle: "Individually tailored to fit your life.",
+    title: "Adapts when your health changes",
+    subtitle: "If your condition changes, your programme changes with it. You never fall behind.",
   },
   {
     image: consistencyImg,
-    title: "Consistency over intensity",
-    subtitle: "We're in it for your lasting wellbeing and routine.",
+    title: "Long-term over quick fixes",
+    subtitle: "Real results come from steady, sustainable progress — not six-week transformations.",
   },
 ];
 
 const bottomCards = [
   {
-    title: "Compassion-based coaching",
-    desc: "As your compassion guide and mentor.",
+    title: "Qualified to work with complex needs",
+    desc: "Level 4 personal trainer with specialist qualifications in exercise referral and cancer rehabilitation — rare at any fitness setting.",
   },
   {
-    title: "Clear, achievable goals",
-    desc: "Your next realistic milestone is always in sight and achievable.",
+    title: "No judgement. No agenda.",
+    desc: "No weigh-ins, no before-and-after photos, no expectation of what fitness should look like. Just you, Esther, and a programme built for your body.",
   },
 ];
 
@@ -39,14 +38,14 @@ const ApproachSection = () => {
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-12">
           <div>
             <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-4">
-              ✦ Approach
+              ✦ The Approach
             </span>
             <h2 className="text-3xl md:text-4xl text-foreground">
-              The Eternal Fitness<br />Approach
+              This Is Not Like<br />Other Personal Training
             </h2>
           </div>
           <p className="text-muted-foreground font-body text-base max-w-sm md:pt-8">
-            A Personal Training Experience That Meets You Where You Are. You won't be rushed, judged, or compared. It's a journey — at a pace your mind, body, and spirit set.
+            Esther is trained to adapt to medical conditions, medication effects, fatigue, and variable capacity. She does not guess — she asks, she listens, and she adjusts. Every single session.
           </p>
         </div>
 

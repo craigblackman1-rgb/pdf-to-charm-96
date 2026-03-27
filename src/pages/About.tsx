@@ -1,4 +1,4 @@
-import { ArrowUpRight, Dumbbell, Target } from "lucide-react";
+import { ArrowUpRight, Award, HeartHandshake, Users } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -8,44 +8,39 @@ import { useConsultationDialog } from "@/hooks/useConsultationDialog";
 import aboutHero from "@/assets/about-hero.jpg";
 import aboutPhilosophy from "@/assets/about-philosophy.jpg";
 import coachPatricia from "@/assets/coach-patricia.jpg";
-import coachSarah from "@/assets/coach-sarah.jpg";
-import coachJohn from "@/assets/coach-john.jpg";
 import studio1 from "@/assets/studio-1.jpg";
 import studio2 from "@/assets/studio-2.jpg";
 
-const coaches = [
+const qualifications = [
   {
-    name: "Patricia Doyle",
-    role: "Head Coach & Founder",
-    desc: "Patricia is the founder and lead coach at Eternal Fitness. With years of experience in personal training, she's passionate about helping individuals improve their health.",
-    img: coachPatricia,
+    title: "Level 4 Personal Trainer",
+    desc: "The highest level of personal training qualification in the UK. Registered with [REPs / CIMSPA].",
+    icon: Award,
   },
   {
-    name: "Sarah O'Brien",
-    role: "Strength & Mobility Coach",
-    desc: "Sarah specialises in functional movement and strength training, helping clients build confidence through safe, progressive programming.",
-    img: coachSarah,
+    title: "Exercise Referral Specialist",
+    desc: "Qualified to work with GP-referred clients and those with clinical conditions requiring adapted exercise programmes.",
+    icon: HeartHandshake,
   },
   {
-    name: "John Doyle",
-    role: "Wellness & Rehab Coach",
-    desc: "John focuses on injury recovery and long-term wellness, supporting clients through rehabilitation with patience and expertise.",
-    img: coachJohn,
+    title: "Cancer Rehabilitation",
+    desc: "Specialist training to support people through cancer treatment and recovery, including those currently in active treatment.",
+    icon: Award,
   },
 ];
 
 const longTermCards = [
   {
     title: "The Power of Consistency",
-    desc: "Small, steady actions repeated over time create lasting physical and mental change.",
+    desc: "Small, steady actions repeated over time create lasting physical and mental change — without extremes.",
   },
   {
-    title: "Commitment to Your Goals",
-    desc: "We help you stay accountable and motivated through every phase of your journey.",
+    title: "Adapting When Things Change",
+    desc: "Life and health are unpredictable. Your programme adapts with you, so progress never stops — it just looks different.",
   },
   {
-    title: "Achieving Sustainable Change",
-    desc: "Real results come from habits that fit your lifestyle, not extreme short-term fixes.",
+    title: "Real Outcomes, Not Aesthetics",
+    desc: "Stronger, more capable, more comfortable in your body. These are the results that actually matter.",
   },
 ];
 
@@ -58,74 +53,121 @@ const About = () => {
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <img src={aboutHero} alt="About Eternal Fitness" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={aboutHero} alt="Esther Fair, Level 4 personal trainer in Worthing" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-hero-overlay/65" />
         <div className="relative z-10 text-center max-w-3xl px-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-5">
-            Unlock Your Strength. Transform Your Health.
+            About Esther — and Why She Does This
           </h1>
           <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">
-            At Eternal Fitness, we focus on sustainable fitness and long-term well-being, empowering you to achieve real progress without extremes. Private, personalised training tailored just for you.
+            Level 4 personal trainer. Exercise referral specialist. Cancer rehabilitation qualified. And someone who knows first-hand what it feels like to start from zero.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button
               onClick={openDialog}
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
             >
-              Book an Initial Consultation
+              Book a Free Consultation
             </button>
             <a
-              href="#philosophy"
+              href="#story"
               className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-7 py-3 rounded-full font-medium hover:bg-primary-foreground/10 transition-colors"
             >
-              Our Goals
+              Esther's Story
             </a>
           </div>
         </div>
       </section>
 
-      {/* Introduction */}
+      {/* Esther's Story */}
+      <section id="story" className="py-20 md:py-28 px-6 md:px-12 bg-background">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium">
+              ✦ Esther's Story
+            </span>
+          </div>
+          <h2 className="text-3xl md:text-4xl text-foreground text-center mb-14">She Has Been Where You Are</h2>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+            <div>
+              <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">
+                Esther did not come to fitness from a place of confidence. There was a time when exercise felt inaccessible, intimidating, and simply not something that was meant for her. When that changed, it changed everything — her health, her mood, her sense of what was possible.
+              </p>
+              <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">
+                That experience is the reason she became a personal trainer. Not to help people lose weight or achieve an aesthetic ideal — but to help people feel stronger, more capable, and more at home in their own bodies.
+              </p>
+              <p className="text-muted-foreground font-body text-base leading-relaxed mb-8">
+                She qualified to Level 4 — the highest personal training qualification in the UK — specifically to work with people who have more complex needs: exercise referral, cancer rehabilitation, and clients whose situations have led other trainers to say they cannot help. Those are exactly the clients Esther is here for.
+              </p>
+              <button
+                onClick={openDialog}
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+              >
+                Book a Free Consultation <ArrowUpRight className="w-4 h-4" />
+              </button>
+            </div>
+            <img
+              src={coachPatricia}
+              alt="Esther Fair, personal trainer at Eternal Fitness Worthing"
+              loading="lazy"
+              className="rounded-2xl w-full h-[460px] object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Qualifications */}
+      <section className="py-20 md:py-28 bg-muted">
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-14">
+            <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+              ✦ Qualifications
+            </span>
+            <h2 className="text-3xl md:text-4xl text-foreground mb-4">Qualified to Help Where Others Cannot</h2>
+            <p className="text-muted-foreground font-body text-base max-w-2xl mx-auto">
+              Most personal trainers hold a Level 3 qualification. Esther holds Level 4 — alongside specialist certifications that are rare in any fitness setting.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {qualifications.map((q) => (
+              <div key={q.title} className="bg-background rounded-2xl p-6 border border-border">
+                <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center mb-4">
+                  <q.icon className="w-5 h-5 text-accent-foreground" />
+                </div>
+                <h4 className="text-foreground text-lg mb-2">{q.title}</h4>
+                <p className="text-muted-foreground font-body text-sm leading-relaxed">{q.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who Esther Works With */}
       <section className="py-20 md:py-28 px-6 md:px-12 bg-background">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center mb-6">
             <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium">
-              ✦ Introduction
+              ✦ Experience
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl text-foreground text-center mb-14">Introduction</h2>
-
-          <div className="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center shrink-0">
-                <Dumbbell className="w-5 h-5 text-accent-foreground" />
-              </div>
-              <div>
-                <h4 className="text-foreground text-lg mb-2">Eternal Fitness</h4>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed">
-                  Eternal Fitness is a privately owned personal training studio based in Worthing, dedicated to supporting long-term health, movement, and wellbeing.
-                </p>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center shrink-0">
-                <Target className="w-5 h-5 text-accent-foreground" />
-              </div>
-              <div>
-                <h4 className="text-foreground text-lg mb-2">Our Focus</h4>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed">
-                  Is on helping people build strength, mobility, and confidence without the pressure of a busy fitness environment. We believe that real change takes time and consistency, and we're here to guide you on that journey.
-                </p>
-              </div>
-            </div>
+          <h2 className="text-3xl md:text-4xl text-foreground text-center mb-6">Experience Across the Full Range of Human Complexity</h2>
+          <div className="max-w-3xl mx-auto text-center mb-14">
+            <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">
+              Over the years, Esther has worked with clients that most personal trainers would not know how to support — people managing serious and complex health conditions, people going through cancer treatment, people with physical disabilities, clients with significant visual impairment, and people whose gender identity or physical goals do not fit neatly into the mainstream fitness mould.
+            </p>
+            <p className="text-muted-foreground font-body text-base leading-relaxed">
+              She mentions this not to boast, but because the person reading this might be wondering whether their situation is too complicated, too unusual, or too much. It almost certainly is not. Every client is treated as an individual, and every programme is built from scratch — with complete respect for whatever their body, health, identity, or history looks like.
+            </p>
           </div>
-
-          <div className="text-center mt-10">
-            <button
-              onClick={openDialog}
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
-            >
-              Book Now <ArrowUpRight className="w-4 h-4" />
-            </button>
+          <div className="flex justify-center">
+            <div className="flex items-center gap-3 bg-accent/10 rounded-2xl px-6 py-4 max-w-xl">
+              <Users className="w-5 h-5 text-accent shrink-0" />
+              <p className="text-foreground font-body text-sm leading-relaxed">
+                If you are wondering whether your situation is too complex — please get in touch. The answer is almost always yes, Esther can help.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -139,57 +181,31 @@ const About = () => {
                 ✦ Philosophy
               </span>
               <h2 className="text-3xl md:text-4xl text-foreground leading-tight mb-6">The Philosophy</h2>
+              <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">
+                Eternal Fitness is not a weight loss service. It is not about transforming your body into something it is not. It is about finding out what your body is capable of — right now, with everything it is currently dealing with — and building steadily from there.
+              </p>
               <p className="text-muted-foreground font-body text-base leading-relaxed mb-6">
-                At Eternal Fitness, our training philosophy is simple: sustainability, confidence, and respect for the body. We don't chase trends or focus on short-term weight loss; instead, we prioritise long-lasting progress for life without limits.
+                The goal is not a six-week result. It is feeling stronger at sixty than you did at fifty. Being able to pick something up off the floor without pain. Having the energy to do the things you love. Moving through life with more ease and confidence than before. That takes time, consistency, and working with someone who genuinely understands your body and adjusts when things change.
               </p>
               <div className="bg-background rounded-2xl p-5 mb-6 border border-border">
                 <h4 className="text-foreground mb-2">More Than a Workout</h4>
                 <p className="text-muted-foreground font-body text-sm leading-relaxed">
-                  It's about finding joy in your own skin, developing healthy habits that fit far beyond the gym.
+                  No weigh-ins. No before-and-after photos. No pressure to look a certain way. Just steady, meaningful progress — measured against your own baseline, not anyone else's.
                 </p>
               </div>
               <button
                 onClick={openDialog}
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
               >
-                Book Now <ArrowUpRight className="w-4 h-4" />
+                Book a Free Consultation <ArrowUpRight className="w-4 h-4" />
               </button>
             </div>
             <img
               src={aboutPhilosophy}
-              alt="Our training philosophy"
+              alt="Personal training philosophy at Eternal Fitness Worthing"
               loading="lazy"
               className="rounded-2xl w-full h-[420px] object-cover"
             />
-          </div>
-        </div>
-      </section>
-
-      {/* Meet Your Coach */}
-      <section className="py-20 md:py-28 px-6 md:px-12 bg-background">
-        <div className="max-w-6xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium mb-4">
-            ✦ Coaching
-          </span>
-          <h2 className="text-3xl md:text-4xl text-foreground mb-4">Meet Your Coach</h2>
-          <p className="text-muted-foreground font-body text-base mb-14 max-w-2xl mx-auto">
-            I hold certifications in [relevant certifications] and I've worked with a wide range of clients — from beginners to seasoned athletes.
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            {coaches.map((coach) => (
-              <div key={coach.name} className="text-center">
-                <img
-                  src={coach.img}
-                  alt={coach.name}
-                  loading="lazy"
-                  className="w-full h-72 object-cover rounded-2xl mb-4"
-                />
-                <h4 className="text-foreground text-lg">{coach.name}</h4>
-                <p className="text-primary text-sm mb-2">{coach.role}</p>
-                <p className="text-muted-foreground font-body text-xs leading-relaxed">{coach.desc}</p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
@@ -201,21 +217,21 @@ const About = () => {
             <span className="inline-flex items-center gap-2 bg-accent/20 text-primary-foreground px-4 py-1.5 rounded-full text-sm font-medium mb-4">
               ✦ Studio
             </span>
-            <h2 className="text-3xl md:text-4xl text-primary-foreground mb-4">The Studio</h2>
+            <h2 className="text-3xl md:text-4xl text-primary-foreground mb-4">A Private Space in Worthing</h2>
             <p className="text-primary-foreground/70 font-body text-base max-w-2xl mx-auto">
-              Our private studio in Worthing offers a calm, welcoming environment where you can focus on your goals without distractions.
+              Sessions take place in a small, private, fully equipped studio. No public gym floor. No other clients watching. No ambient pressure of what anyone else around you is doing.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-10">
-            <img src={studio1} alt="Studio interior" loading="lazy" className="rounded-2xl w-full h-72 object-cover" />
-            <img src={studio2} alt="Studio equipment" loading="lazy" className="rounded-2xl w-full h-72 object-cover" />
+            <img src={studio1} alt="Eternal Fitness private training studio Worthing" loading="lazy" className="rounded-2xl w-full h-72 object-cover" />
+            <img src={studio2} alt="Training equipment at Eternal Fitness Worthing" loading="lazy" className="rounded-2xl w-full h-72 object-cover" />
           </div>
 
           <div className="bg-accent rounded-2xl p-6 md:p-8 max-w-2xl">
-            <h4 className="text-accent-foreground text-lg mb-2">Ability and Comfort</h4>
+            <h4 className="text-accent-foreground text-lg mb-2">Built for All Abilities</h4>
             <p className="text-accent-foreground/80 font-body text-sm leading-relaxed">
-              We keep it small, ensuring that each client receives the attention they deserve. It's your space to train safely, with equipment that supports all levels of ability and comfort.
+              The studio is set up to accommodate a wide range of abilities and mobility levels. Equipment is chosen to support functional movement — not performance aesthetics. The environment is deliberately calm, because the last thing most clients need is more noise.
             </p>
           </div>
         </div>
@@ -227,12 +243,12 @@ const About = () => {
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14 gap-6">
             <div>
               <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium mb-4">
-                ✦ Results
+                ✦ Long-Term Progress
               </span>
-              <h2 className="text-3xl md:text-4xl text-foreground">Why Long-Term Matters</h2>
+              <h2 className="text-3xl md:text-4xl text-foreground">Why the Long-Term Approach Matters</h2>
             </div>
             <p className="text-muted-foreground font-body text-base max-w-md">
-              At Eternal Fitness, we believe in lasting results through consistent effort.
+              Quick fixes do not work. Sustainable change does — and Eternal Fitness is built around that belief.
             </p>
           </div>
 

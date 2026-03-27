@@ -13,7 +13,7 @@ const CTASection = ({ onBookConsultation }: CTASectionProps) => {
         <div className="relative h-64 md:h-auto">
           <img
             src={ctaImg}
-            alt="Personal training session"
+            alt="Private personal training studio Worthing"
             className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
@@ -22,10 +22,10 @@ const CTASection = ({ onBookConsultation }: CTASectionProps) => {
         <div className="bg-accent flex items-center px-8 md:px-16 py-12 md:py-0">
           <div>
             <h2 className="font-display text-3xl md:text-4xl text-accent-foreground leading-tight mb-4">
-              Book a Personal Training Session in Worthing
+              Ready to Find Out If This Is Right for You?
             </h2>
             <p className="text-accent-foreground/80 font-body text-base mb-8 max-w-md">
-              Ready to move better, feel stronger, and rebuild confidence in your body? Book your initial consultation today from our private, fully equipped Worthing studio.
+              The first conversation is free, there is no commitment, and there is no such thing as the wrong question. Esther works with a small number of clients at any one time — so every person gets her full attention.
             </p>
             <div className="flex flex-wrap gap-4">
               {onBookConsultation ? (
@@ -33,21 +33,21 @@ const CTASection = ({ onBookConsultation }: CTASectionProps) => {
                   onClick={onBookConsultation}
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
                 >
-                  Book Now <ArrowUpRight className="w-4 h-4" />
+                  Book a Free Consultation <ArrowUpRight className="w-4 h-4" />
                 </button>
               ) : (
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
                 >
-                  Book Now <ArrowUpRight className="w-4 h-4" />
+                  Book a Free Consultation <ArrowUpRight className="w-4 h-4" />
                 </a>
               )}
               <a
                 href="tel:07517658128"
                 className="inline-flex items-center gap-2 border border-accent-foreground/40 text-accent-foreground px-6 py-3 rounded-full font-medium hover:bg-accent-foreground/10 transition-colors"
               >
-                Speak to Esther <ArrowUpRight className="w-4 h-4" />
+                Call Esther <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
           </div>

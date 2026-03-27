@@ -6,7 +6,7 @@ import mobilityImg from "@/assets/mobility-movement.jpg";
 import studioImg from "@/assets/studio-2.jpg";
 
 const images = [
-  { src: s1, label: "Mobility & Movement", desc: "Programmes designed to improve movement, strength, and confidence.", span: "col-span-2 row-span-2" },
+  { src: s1, label: "Cancer Rehabilitation", desc: "Specialist support during treatment, in remission, and post-surgery.", span: "col-span-2 row-span-2" },
   { src: s2, label: null, desc: null, span: "" },
   { src: s3, label: null, desc: null, span: "" },
   { src: heroImg, label: null, desc: null, span: "" },
@@ -20,11 +20,11 @@ const SpecialiseSection = () => {
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         <div className="text-center mb-12">
           <span className="inline-flex items-center gap-2 bg-primary/20 text-primary-foreground px-4 py-1.5 rounded-full text-sm font-medium mb-4">
-            ✦ Specialise
+            ✦ Specialist Areas
           </span>
-          <h2 className="text-3xl md:text-4xl text-accent-foreground mb-3">What We Specialise In</h2>
-          <p className="text-accent-foreground/70 font-body text-base max-w-lg mx-auto">
-            At Eternal Fitness, training builds a body for daily life — walking, without pain, lifting confidently, and recovering from injury.
+          <h2 className="text-3xl md:text-4xl text-accent-foreground mb-3">Who Esther Works With</h2>
+          <p className="text-accent-foreground/70 font-body text-base max-w-2xl mx-auto">
+            Cancer rehabilitation. Chronic health conditions. Disability and adaptive training. Neurological conditions. GP-referred exercise. Injury recovery. Older adults. People who have never felt welcome in a gym. If your situation is not listed — please still get in touch. The answer is almost always yes.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ const SpecialiseSection = () => {
             <div key={i} className={`relative rounded-xl overflow-hidden group ${img.span}`}>
               <img
                 src={img.src}
-                alt={img.label || "Training specialisation"}
+                alt={img.label || "Personal training Worthing"}
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
