@@ -10,6 +10,8 @@ import TermsCondition from "./pages/TermsCondition.tsx";
 import FAQs from "./pages/FAQs.tsx";
 import PersonalTraining from "./pages/PersonalTraining.tsx";
 import Pricing from "./pages/Pricing.tsx";
+import Blog from "./pages/Blog.tsx";
+import BlogPost from "./pages/BlogPost.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/personal-training" element={<PersonalTraining />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
