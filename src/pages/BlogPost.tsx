@@ -10,7 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
-  const { isOpen, openDialog, closeDialog } = useConsultationDialog();
+  const { open, setOpen, openDialog } = useConsultationDialog();
 
   const { data: post, isLoading } = useQuery({
     queryKey: ["blog-post", slug],
