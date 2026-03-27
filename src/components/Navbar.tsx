@@ -6,8 +6,8 @@ const navItems = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Personal Training", to: "/personal-training" },
+  { label: "Pricing", to: "/pricing" },
   { label: "FAQs", to: "/faqs" },
-  { label: "Blog", to: "/" },
 ];
 
 interface NavbarProps {
