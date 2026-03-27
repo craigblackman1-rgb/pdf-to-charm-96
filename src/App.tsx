@@ -9,6 +9,7 @@ import Contact from "./pages/Contact.tsx";
 import TermsCondition from "./pages/TermsCondition.tsx";
 import FAQs from "./pages/FAQs.tsx";
 import PersonalTraining from "./pages/PersonalTraining.tsx";
+import Pricing from "./pages/Pricing.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
