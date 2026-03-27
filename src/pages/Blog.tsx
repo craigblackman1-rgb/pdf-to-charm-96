@@ -14,7 +14,7 @@ import blogHero from "@/assets/blog-hero.jpg";
 const categories = ["All", "Training", "Nutrition", "Recovery", "Mindset", "Rehabilitation"];
 
 const Blog = () => {
-  const { isOpen, openDialog, closeDialog } = useConsultationDialog();
+  const { open, setOpen, openDialog } = useConsultationDialog();
   const [search, setSearch] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
 
