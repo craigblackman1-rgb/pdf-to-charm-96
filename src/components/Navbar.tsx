@@ -8,6 +8,7 @@ const navItems = [
   { label: "Personal Training", to: "/personal-training" },
   { label: "Pricing", to: "/pricing" },
   { label: "FAQs", to: "/faqs" },
+  { label: "Blog", to: "/blog" },
 ];
 
 interface NavbarProps {
