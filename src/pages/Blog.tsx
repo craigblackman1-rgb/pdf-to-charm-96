@@ -44,7 +44,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <ConsultationDialog isOpen={isOpen} onClose={closeDialog} />
+      <ConsultationDialog open={open} onOpenChange={setOpen} />
 
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
