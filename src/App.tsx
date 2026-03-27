@@ -10,6 +10,8 @@ import TermsCondition from "./pages/TermsCondition.tsx";
 import FAQs from "./pages/FAQs.tsx";
 import PersonalTraining from "./pages/PersonalTraining.tsx";
 import Pricing from "./pages/Pricing.tsx";
+import Blog from "./pages/Blog.tsx";
+import BlogPost from "./pages/BlogPost.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
