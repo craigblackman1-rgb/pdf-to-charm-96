@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { ArrowUpRight, Facebook, Twitter, Link2 } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import SocialIcon from "@/components/SocialIcons";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ConsultationDialog from "@/components/ConsultationDialog";
@@ -247,15 +248,31 @@ const BlogPost = () => {
                     Share with your community!
                   </p>
                   <div className="flex gap-2">
-                    <button className="w-8 h-8 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground/20 transition-colors">
-                      <Facebook className="w-4 h-4 text-foreground" />
-                    </button>
-                    <button className="w-8 h-8 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground/20 transition-colors">
-                      <Twitter className="w-4 h-4 text-foreground" />
-                    </button>
-                    <button className="w-8 h-8 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground/20 transition-colors">
-                      <Link2 className="w-4 h-4 text-foreground" />
-                    </button>
+                    <a
+                      href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Share on Facebook"
+                      className="w-8 h-8 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground/20 transition-colors text-foreground"
+                    >
+                      <SocialIcon name="facebook" />
+                    </a>
+                    <a
+                      href={`https://wa.me/?text=${encodeURIComponent(post.title + " " + window.location.href)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Share on WhatsApp"
+                      className="w-8 h-8 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground/20 transition-colors text-foreground"
+                    >
+                      <SocialIcon name="whatsapp" />
+                    </a>
+                    <a
+                      href={`mailto:?subject=${encodeURIComponent(post.title)}&body=${encodeURIComponent(window.location.href)}`}
+                      aria-label="Share via Email"
+                      className="w-8 h-8 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground/20 transition-colors text-foreground"
+                    >
+                      <SocialIcon name="email" />
+                    </a>
                   </div>
                 </div>
               </div>
