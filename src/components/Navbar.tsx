@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import EternalFitnessLogo from "@/components/EternalFitnessLogo";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 
 const navItems = [
