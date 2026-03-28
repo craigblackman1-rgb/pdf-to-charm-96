@@ -72,8 +72,7 @@ const EternalFitnessLogo = ({ className = "", variant = "light" }: EternalFitnes
         fontSize="15"
         letterSpacing="4"
         fill={textColor}
-        textTransform="uppercase"
-      >
+        style={{ textTransform: "uppercase" }}
         FITNESS
       </text>
 
