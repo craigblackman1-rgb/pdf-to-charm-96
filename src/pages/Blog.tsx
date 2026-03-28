@@ -55,7 +55,7 @@ const Blog = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4">
             Our Blogs
           </h1>
-          <p className="text-primary-foreground/70 max-w-xl mx-auto text-sm md:text-base mb-8">
+          <p className="text-primary-foreground/70 max-w-xl mx-auto text-base md:text-lg mb-8">
             Dive into our blog for expert insights, tips, and industry trends to support your health and fitness journey.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
@@ -85,7 +85,7 @@ const Blog = () => {
             <h2 className="text-3xl md:text-4xl text-foreground mb-4">
               Insights and Inspiration, Explore Our Blog
             </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto text-sm">
+            <p className="text-muted-foreground max-w-xl mx-auto text-base">
               Dive into our blog for expert insights, tips, and industry trends to elevate your health and fitness journey.
             </p>
           </div>
@@ -159,7 +159,7 @@ const Blog = () => {
               <h2 className="text-3xl md:text-4xl text-foreground mb-4">
                 Dive into Our Top Blogs
               </h2>
-              <p className="text-muted-foreground max-w-xl mx-auto text-sm">
+              <p className="text-muted-foreground max-w-xl mx-auto text-base">
                 Explore our curated selection of top blogs, offering expert insights and valuable tips.
               </p>
             </div>
@@ -226,7 +226,7 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
         {post.title}
       </h3>
       {post.excerpt && (
-        <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+        <p className="text-muted-foreground text-base mb-4 line-clamp-2">
           {post.excerpt}
         </p>
       )}
@@ -267,15 +267,15 @@ const FeaturedCard = ({ post, large }: { post: BlogPost; large?: boolean }) => (
     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
     <div className="absolute bottom-0 left-0 right-0 p-5">
       <div className="flex gap-2 mb-2">
-        <span className="bg-accent text-accent-foreground text-[10px] font-semibold px-2.5 py-1 rounded-full">
+        <span className="bg-accent text-accent-foreground text-xs font-semibold px-2.5 py-1 rounded-full">
           {post.category}
         </span>
       </div>
-      <h3 className={`font-bold text-primary-foreground ${large ? "text-xl" : "text-sm"}`}>
+      <h3 className={`font-bold text-primary-foreground ${large ? "text-xl" : "text-base"}`}>
         {post.title}
       </h3>
       {large && post.excerpt && (
-        <p className="text-primary-foreground/70 text-sm mt-2 line-clamp-2">{post.excerpt}</p>
+        <p className="text-primary-foreground/70 text-base mt-2 line-clamp-2">{post.excerpt}</p>
       )}
       {large && (
         <div className="flex items-center gap-2 mt-3">

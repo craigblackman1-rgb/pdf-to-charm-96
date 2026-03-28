@@ -137,7 +137,7 @@ const About = () => {
                   <q.icon className="w-5 h-5 text-accent-foreground" />
                 </div>
                 <h4 className="text-foreground text-lg mb-2">{q.title}</h4>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed">{q.desc}</p>
+                <p className="text-muted-foreground font-body text-base leading-relaxed">{q.desc}</p>
               </div>
             ))}
           </div>
@@ -164,7 +164,7 @@ const About = () => {
           <div className="flex justify-center">
             <div className="flex items-center gap-3 bg-accent/10 rounded-2xl px-6 py-4 max-w-xl">
               <Users className="w-5 h-5 text-accent shrink-0" />
-              <p className="text-foreground font-body text-sm leading-relaxed">
+              <p className="text-foreground font-body text-base leading-relaxed">
                 If you are wondering whether your situation is too complex — please get in touch. The answer is almost always yes, Esther can help.
               </p>
             </div>
@@ -189,7 +189,7 @@ const About = () => {
               </p>
               <div className="bg-background rounded-2xl p-5 mb-6 border border-border">
                 <h4 className="text-foreground mb-2">More Than a Workout</h4>
-                <p className="text-muted-foreground font-body text-sm leading-relaxed">
+                <p className="text-muted-foreground font-body text-base leading-relaxed">
                   No weigh-ins. No before-and-after photos. No pressure to look a certain way. Just steady, meaningful progress — measured against your own baseline, not anyone else's.
                 </p>
               </div>
@@ -230,7 +230,7 @@ const About = () => {
 
           <div className="bg-accent rounded-2xl p-6 md:p-8 max-w-2xl">
             <h4 className="text-accent-foreground text-lg mb-2">Built for All Abilities</h4>
-            <p className="text-accent-foreground/80 font-body text-sm leading-relaxed">
+            <p className="text-accent-foreground/80 font-body text-base leading-relaxed">
               The studio is set up to accommodate a wide range of abilities and mobility levels. Equipment is chosen to support functional movement — not performance aesthetics. The environment is deliberately calm, because the last thing most clients need is more noise.
             </p>
           </div>
@@ -257,8 +257,8 @@ const About = () => {
               <div key={card.title} className="border border-border rounded-2xl overflow-hidden">
                 <div className="h-48 bg-muted" />
                 <div className="p-5">
-                  <h4 className="text-foreground text-base mb-2">{card.title}</h4>
-                  <p className="text-muted-foreground font-body text-sm">{card.desc}</p>
+                  <h4 className="text-foreground text-lg mb-2">{card.title}</h4>
+                  <p className="text-muted-foreground font-body text-base">{card.desc}</p>
                 </div>
               </div>
             ))}

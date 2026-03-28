@@ -85,45 +85,45 @@ const PrivacyPolicy = () => {
 
           {/* Main content */}
           <div className="prose-sm max-w-none space-y-12">
-            <p className="text-muted-foreground text-xs">Last updated: December 06, 2020</p>
+            <p className="text-muted-foreground text-sm">Last updated: December 06, 2020</p>
 
             <div id="information-collect">
               <h2 className="text-2xl text-foreground mb-3">1. What information do we collect?</h2>
 
-              <h4 className="text-foreground text-sm mb-2">Personal information you disclose to us</h4>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <h4 className="text-foreground text-base mb-2">Personal information you disclose to us</h4>
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 We collect personal information that you voluntarily provide to us when expressing an interest in obtaining information about us or our products and services, when participating in activities on the Sites, or otherwise contacting us.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 The personal information we collect may include the following:
               </p>
-              <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1.5 mb-4">
+              <ul className="list-disc list-inside text-muted-foreground text-base space-y-1.5 mb-4">
                 <li><strong className="text-foreground">Name and Contact Data.</strong> We collect your first and last name, email address, postal address, phone number, and other similar contact data.</li>
                 <li><strong className="text-foreground">Credentials.</strong> We collect passwords, password hints, and similar security information used for authentication and account access.</li>
                 <li><strong className="text-foreground">Payment Data.</strong> We collect data necessary to process your payment if you make purchases, such as your payment instrument number and the security code associated with your payment instrument. All payment data is stored by our payment processor.</li>
               </ul>
 
-              <h4 className="text-foreground text-sm mb-2">Information automatically collected</h4>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <h4 className="text-foreground text-base mb-2">Information automatically collected</h4>
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 We automatically collect certain information when you visit, use or navigate the Sites. This information does not reveal your specific identity but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Sites and other technical information.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 This information is primarily needed to maintain the security and operation of our Sites, and for our internal analytics and reporting purposes. Like many businesses, we also collect information through cookies and similar technologies.
               </p>
 
-              <h4 className="text-foreground text-sm mb-2">Information collected from other sources</h4>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h4 className="text-foreground text-base mb-2">Information collected from other sources</h4>
+              <p className="text-muted-foreground text-base leading-relaxed">
                 We may obtain information about you from other sources, such as public databases, joint marketing partners, as well as from other third parties. Examples of the information we receive from other sources include: social media profile information; marketing leads and search results and links, including paid listings.
               </p>
             </div>
 
             <div id="use-information">
               <h2 className="text-2xl text-foreground mb-3">2. How do we use your information?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 We process your information for purposes based on legitimate business interests, the fulfillment of our contract with you, compliance with our legal obligations, and/or your consent.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">We use the information we collect or receive:</p>
-              <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1.5">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">We use the information we collect or receive:</p>
+              <ul className="list-disc list-inside text-muted-foreground text-base space-y-1.5">
                 <li><strong className="text-foreground">Marketing and promotional communications.</strong> We and/or our third party marketing partners may use the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. You can opt-out of our marketing emails at any time.</li>
                 <li><strong className="text-foreground">Testimonials.</strong> We post testimonials on our Sites that may contain personal information. Prior to posting a testimonial, we will obtain your consent to use your name and testimonial.</li>
                 <li><strong className="text-foreground">Request feedback.</strong> We may use your information to request feedback and to contact you about your use of our Sites.</li>
@@ -136,11 +136,11 @@ const PrivacyPolicy = () => {
 
             <div id="information-shared">
               <h2 className="text-2xl text-foreground mb-3">3. Will your information be shared with anyone?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 We only share information with your consent, to comply with laws, to provide you with services, to protect your rights, or to fulfill business obligations.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">We may process or share your data based on the following legal basis:</p>
-              <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1.5">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">We may process or share your data based on the following legal basis:</p>
+              <ul className="list-disc list-inside text-muted-foreground text-base space-y-1.5">
                 <li><strong className="text-foreground">Consent:</strong> We may process your data if you have given us specific consent to use your personal information for a specific purpose.</li>
                 <li><strong className="text-foreground">Legitimate Interests:</strong> We may process your data when it is reasonably necessary to achieve our legitimate business interests.</li>
                 <li><strong className="text-foreground">Performance of a Contract:</strong> Where we have entered into a contract with you, we may process your personal information to fulfill the terms of our contract.</li>
@@ -152,7 +152,7 @@ const PrivacyPolicy = () => {
 
             <div id="cookies-tracking">
               <h2 className="text-2xl text-foreground mb-3">4. Do we use cookies and other tracking technologies?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 We may use cookies and similar tracking technologies (like web beacons and pixels) to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our{" "}
                 <a href="/cookies-policy" className="text-primary hover:underline">Cookie Policy</a>.
               </p>
@@ -160,24 +160,24 @@ const PrivacyPolicy = () => {
 
             <div id="keep-information">
               <h2 className="text-2xl text-foreground mb-3">5. How long do we keep your information?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 We keep your information for as long as necessary to fulfill the purposes outlined in this privacy policy unless otherwise required by law. We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy policy, unless a longer retention period is required or permitted by law (such as tax, accounting or other legal requirements). No purpose in this policy will require us keeping your personal information for longer than 1 year.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
               </p>
             </div>
 
             <div id="information-safe">
               <h2 className="text-2xl text-foreground mb-3">6. How do we keep your information safe?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 We aim to protect your personal information through a system of organisational and technical security measures. We have implemented appropriate technical and organisational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the internet itself is 100% secure. Although we will do our best to protect your personal information, transmission of personal information to and from our Sites is at your own risk. You should only access the services within a secure environment.
               </p>
             </div>
 
             <div id="minors">
               <h2 className="text-2xl text-foreground mb-3">7. Do we collect information from minors?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 We do not knowingly solicit data from or market to children under 18 years of age. By using the Sites, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent's use of the Sites. If we learn that personal information from users less than 18 years of age has been collected, we will deactivate the account and take reasonable measures to promptly delete such data from our records. If you become aware of any data we may have collected from children under age 18, please contact us at{" "}
                 <a href="mailto:esther.fair@eternal-fitness.co.uk" className="text-primary hover:underline">esther.fair@eternal-fitness.co.uk</a>.
               </p>
@@ -185,16 +185,16 @@ const PrivacyPolicy = () => {
 
             <div id="privacy-rights">
               <h2 className="text-2xl text-foreground mb-3">8. What are your privacy rights?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 In some regions, such as the European Economic Area, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 In some regions (like the European Economic Area), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 If we are relying on your consent to process your personal information, you have the right to withdraw your consent at any time. Please note however that this will not affect the lawfulness of the processing before its withdrawal.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 <strong className="text-foreground">Cookies and similar technologies:</strong> Most web browsers are set to accept cookies by default. If you prefer, you can usually choose to set your browser to remove cookies and to reject cookies. If you choose to remove cookies or reject cookies, this could affect certain features or services of our Sites. For further information, please see our{" "}
                 <a href="/cookies-policy" className="text-primary hover:underline">Cookie Policy</a>.
               </p>
@@ -202,36 +202,36 @@ const PrivacyPolicy = () => {
 
             <div id="dnt-features">
               <h2 className="text-2xl text-foreground mb-3">9. Controls for Do-Not-Track features</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. No uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Policy.
               </p>
             </div>
 
             <div id="california-rights">
               <h2 className="text-2xl text-foreground mb-3">10. Do California residents have specific privacy rights?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information. California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year.
               </p>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 If you are under 18 years of age, reside in California, and have a registered account with the Sites, you have the right to request removal of unwanted data that you publicly post on the Sites. To request removal of such data, please contact us using the contact information provided below, and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Sites, but please be aware that the data may not be completely or comprehensively removed from all our systems.
               </p>
             </div>
 
             <div id="policy-updates">
               <h2 className="text-2xl text-foreground mb-3">11. Do we make updates to this policy?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground text-base leading-relaxed">
                 Yes, we will update this policy as necessary to stay compliant with relevant laws. We may update this privacy policy from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy policy, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy policy frequently to be informed of how we are protecting your information.
               </p>
             </div>
 
             <div id="contact-us">
               <h2 className="text-2xl text-foreground mb-3">12. How can you contact us about this policy?</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+              <p className="text-muted-foreground text-base leading-relaxed mb-3">
                 If you have questions or comments about this policy, you may contact our Data Protection Officer (DPO), Esther Fair, by email at{" "}
                 <a href="mailto:esther.fair@eternal-fitness.co.uk" className="text-primary hover:underline">esther.fair@eternal-fitness.co.uk</a>.
               </p>
-              <h4 className="text-foreground text-sm mb-2">How can you review, update, or delete the data we collect from you?</h4>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <h4 className="text-foreground text-base mb-2">How can you review, update, or delete the data we collect from you?</h4>
+              <p className="text-muted-foreground text-base leading-relaxed">
                 Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please{" "}
                 <a href="/contact" className="text-primary hover:underline">contact us</a>. We will respond to your request within 30 days.
               </p>

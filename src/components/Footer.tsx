@@ -11,11 +11,11 @@ const Footer = () => {
           <Link to="/" className="inline-block">
             <EternalFitnessLogo variant="dark" className="h-7 w-auto" />
           </Link>
-          <p className="text-muted-foreground text-xs mt-3 mb-6 leading-relaxed">
+          <p className="text-muted-foreground text-sm mt-3 mb-6 leading-relaxed">
             Private, one-to-one personal training in Worthing. Level 4 qualified. Exercise referral specialist. Cancer rehabilitation.
           </p>
           <div className="space-y-3">
-            <h4 className="font-body font-semibold text-foreground text-sm">Contact Esther</h4>
+            <h4 className="font-body font-semibold text-foreground text-base">Contact Esther</h4>
             <a href="tel:07517658128" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-foreground transition-colors">
               <Phone className="w-4 h-4 text-accent" /> 07517 658 128
             </a>
@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-body font-semibold text-foreground text-sm mb-4">Services</h4>
+          <h4 className="font-body font-semibold text-foreground text-base mb-4">Services</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/personal-training" className="hover:text-foreground transition-colors">Personal Training in Worthing</Link></li>
             <li><Link to="/personal-training" className="hover:text-foreground transition-colors">Cancer Rehabilitation</Link></li>
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-body font-semibold text-foreground text-sm mb-4">Information</h4>
+          <h4 className="font-body font-semibold text-foreground text-base mb-4">Information</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li><Link to="/about" className="hover:text-foreground transition-colors">About Esther</Link></li>
             <li><Link to="/pricing" className="hover:text-foreground transition-colors">Pricing</Link></li>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-body font-semibold text-foreground text-sm mb-4">Follow me on Facebook</h4>
+          <h4 className="font-body font-semibold text-foreground text-base mb-4">Follow me on Facebook</h4>
           <div className="flex gap-3">
             <a
               href="https://www.facebook.com/EternalFitnessPersonalTraining/"

@@ -62,8 +62,8 @@ const ApproachSection = () => {
                 />
               </div>
               <div className="p-5">
-                <h4 className="text-foreground text-base mb-1">{item.title}</h4>
-                <p className="text-muted-foreground text-sm">{item.subtitle}</p>
+                <h4 className="text-foreground text-lg mb-1">{item.title}</h4>
+                <p className="text-muted-foreground text-base">{item.subtitle}</p>
               </div>
             </div>
           ))}
@@ -73,8 +73,8 @@ const ApproachSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {bottomCards.map((card) => (
             <div key={card.title} className="bg-muted rounded-2xl p-6">
-              <h4 className="text-foreground text-base mb-2">{card.title}</h4>
-              <p className="text-muted-foreground text-sm">{card.desc}</p>
+              <h4 className="text-foreground text-lg mb-2">{card.title}</h4>
+              <p className="text-muted-foreground text-base">{card.desc}</p>
             </div>
           ))}
         </div>

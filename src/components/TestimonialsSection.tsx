@@ -43,14 +43,14 @@ const TestimonialsSection = () => {
           {testimonials.map((t) => (
             <div key={t.name} className="bg-muted rounded-2xl p-6">
               <div className="text-primary text-3xl mb-3 font-display">"</div>
-              <p className="text-foreground font-body text-sm leading-relaxed mb-5">{t.quote}</p>
+              <p className="text-foreground font-body text-base leading-relaxed mb-5">{t.quote}</p>
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground text-sm font-bold">
                   {t.name[0]}
                 </div>
                 <div>
-                  <p className="text-foreground font-semibold text-sm">{t.name}</p>
-                  <p className="text-muted-foreground text-xs">{t.detail}</p>
+                  <p className="text-foreground font-semibold text-base">{t.name}</p>
+                  <p className="text-muted-foreground text-sm">{t.detail}</p>
                 </div>
               </div>
             </div>

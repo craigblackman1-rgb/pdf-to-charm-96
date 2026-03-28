@@ -50,18 +50,18 @@ const HeroSection = ({ onBookConsultation }: HeroSectionProps) => {
             </div>
             <div>
               <p className="text-primary-foreground font-bold text-xl">Level 4 Qualified</p>
-              <p className="text-primary-foreground/60 text-xs">The highest personal training qualification in the UK — plus exercise referral and cancer rehabilitation.</p>
+              <p className="text-primary-foreground/60 text-sm">The highest personal training qualification in the UK — plus exercise referral and cancer rehabilitation.</p>
             </div>
           </div>
           <div className="bg-background/10 backdrop-blur-md rounded-2xl p-5 border border-primary-foreground/10">
-            <p className="text-primary-foreground/80 text-sm italic mb-2">
+            <p className="text-primary-foreground/80 text-base italic mb-2">
               "As someone who has dealt with chronic pain for years, I was sceptical. But the personalised approach has genuinely changed my quality of life."
             </p>
-            <p className="text-primary-foreground font-semibold text-xs">Angela M · <span className="text-primary-foreground/50">Worthing client</span></p>
+            <p className="text-primary-foreground font-semibold text-sm">Angela M · <span className="text-primary-foreground/50">Worthing client</span></p>
           </div>
           <div className="bg-primary rounded-2xl p-5 flex flex-col justify-center">
             <h4 className="text-primary-foreground text-lg mb-1">Free Consultation</h4>
-            <p className="text-primary-foreground/80 text-xs">Every new client starts with a free 30-minute conversation. No commitment, no sales pitch.</p>
+            <p className="text-primary-foreground/80 text-sm">Every new client starts with a free 30-minute conversation. No commitment, no sales pitch.</p>
           </div>
         </div>
       </div>

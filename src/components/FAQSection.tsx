@@ -43,7 +43,7 @@ const FAQSection = () => {
           <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
             ✦ Specialise
           </span>
-          <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-4">
+          <h2 className="font-display text-3xl md:text-4xl text-foreground leading-tight mb-4">
             Frequently asked question
           </h2>
           <p className="text-muted-foreground font-body text-lg mb-8">
@@ -64,7 +64,7 @@ const FAQSection = () => {
               <AccordionTrigger className="font-body text-foreground text-left text-base py-5 hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground font-body text-sm leading-relaxed pb-5">
+              <AccordionContent className="text-muted-foreground font-body text-base leading-relaxed pb-5">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
