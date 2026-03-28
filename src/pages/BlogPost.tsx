@@ -146,8 +146,8 @@ const BlogPost = () => {
             Blog
           </h1>
           <p className="text-primary-foreground/70 max-w-xl mx-auto text-sm md:text-base mb-8">
-            This Cookies Policy explains how we collect, use, and safeguard your
-            data when you visit our website or contact us for services.
+            Expert advice on training, nutrition, recovery and mindset from
+            Eternal Fitness in Worthing.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <button
@@ -202,7 +202,20 @@ const BlogPost = () => {
               {/* Article Content */}
               {processedContent ? (
                 <div
-                  className="prose prose-lg max-w-none text-foreground prose-headings:text-foreground prose-a:text-accent prose-strong:text-foreground prose-li:text-foreground"
+                  className="prose prose-lg max-w-none text-foreground
+                    prose-headings:text-foreground prose-headings:font-display prose-headings:font-bold
+                    prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border prose-h2:pb-2
+                    prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+                    prose-p:text-foreground/90 prose-p:leading-relaxed prose-p:mb-4
+                    prose-a:text-accent prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-accent/80
+                    prose-strong:text-foreground prose-strong:font-semibold
+                    prose-em:text-foreground/80 prose-em:italic
+                    prose-ul:my-4 prose-ul:list-disc prose-ul:pl-6 prose-ul:space-y-2
+                    prose-ol:my-4 prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2
+                    prose-li:text-foreground/90 prose-li:leading-relaxed
+                    prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:bg-muted/30 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:my-6 prose-blockquote:italic prose-blockquote:text-foreground/80
+                    prose-img:rounded-xl prose-img:my-6 prose-img:shadow-md
+                    prose-hr:border-border prose-hr:my-8"
                   dangerouslySetInnerHTML={{ __html: processedContent }}
                 />
               ) : (
