@@ -8,6 +8,17 @@ import ConsultationDialog from "@/components/ConsultationDialog";
 import { useConsultationDialog } from "@/hooks/useConsultationDialog";
 import { supabase } from "@/integrations/supabase/client";
 import blogHero from "@/assets/blog-hero.jpg";
+import strengthImg from "@/assets/strength-tasks.jpg";
+import mobilityImg from "@/assets/mobility-movement.jpg";
+import mindBodyImg from "@/assets/mind-body.jpg";
+import heroGymImg from "@/assets/hero-gym.jpg";
+
+const categoryImages: Record<string, string> = {
+  Training: strengthImg,
+  Nutrition: mindBodyImg,
+  Recovery: mobilityImg,
+  General: heroGymImg,
+};
 import { useEffect, useState, useMemo } from "react";
 
 interface BlogPostData {
@@ -173,16 +184,12 @@ const BlogPost = () => {
             {/* Left Column - Article */}
             <div className="lg:col-span-2">
               {/* Post Header Image */}
-              <div className="relative rounded-2xl overflow-hidden mb-8">
-                {post.image_url ? (
-                  <img
-                    src={post.image_url}
-                    alt={post.title}
-                    className="w-full aspect-[16/9] object-cover"
-                  />
-                ) : (
-                  <div className="w-full aspect-[16/9] bg-section-dark" />
-                )}
+              <div className="relative rounded-2xl overflow-hidden mb-8 shadow-md">
+                <img
+                  src={post.image_url || categoryImages[post.category] || heroGymImg}
+                  alt={post.title}
+                  className="w-full aspect-[16/9] object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
                   <span className="inline-block bg-accent text-accent-foreground text-xs font-semibold px-3 py-1 rounded-full mb-3">
@@ -232,7 +239,7 @@ const BlogPost = () => {
             {/* Right Column - Sidebar */}
             <div className="space-y-8">
               {/* Author Card */}
-              <div className="bg-muted/50 rounded-2xl p-6">
+              <div className="bg-muted/50 rounded-2xl p-6 shadow-md">
                 <div className="flex items-start gap-4 mb-4">
                   {post.author_avatar ? (
                     <img
@@ -333,17 +340,11 @@ const BlogPost = () => {
                         className="flex items-center gap-3 group"
                       >
                         <div className="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 bg-muted">
-                          {rp.image_url ? (
-                            <img
-                              src={rp.image_url}
-                              alt={rp.title}
-                              className="w-full h-full object-cover"
-                            />
-                          ) : (
-                            <div className="w-full h-full bg-accent/10 flex items-center justify-center text-accent text-xs font-bold">
-                              E
-                            </div>
-                          )}
+                          <img
+                            src={rp.image_url || categoryImages[rp.category] || heroGymImg}
+                            alt={rp.title}
+                            className="w-full h-full object-cover"
+                          />
                         </div>
                         <div className="min-w-0">
                           <p className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors line-clamp-2">
@@ -367,17 +368,13 @@ const BlogPost = () => {
                   </h4>
                   <Link
                     to={`/blog/${featuredPost.slug}`}
-                    className="group block rounded-2xl overflow-hidden relative h-64"
+                    className="group block rounded-2xl overflow-hidden relative h-64 shadow-md"
                   >
-                    {featuredPost.image_url ? (
-                      <img
-                        src={featuredPost.image_url}
-                        alt={featuredPost.title}
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    ) : (
-                      <div className="absolute inset-0 bg-section-dark" />
-                    )}
+                    <img
+                      src={featuredPost.image_url || categoryImages[featuredPost.category] || heroGymImg}
+                      alt={featuredPost.title}
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-5">
                       <div className="flex items-center gap-2 text-white/60 text-xs mb-2">
@@ -430,21 +427,13 @@ const BlogPost = () => {
                 <div key={pp.id} className="group">
                   <Link
                     to={`/blog/${pp.slug}`}
-                    className="block rounded-2xl overflow-hidden mb-4 aspect-[4/3] bg-muted"
+                    className="block rounded-2xl overflow-hidden mb-4 aspect-[4/3] bg-muted shadow-md"
                   >
-                    {pp.image_url ? (
-                      <img
-                        src={pp.image_url}
-                        alt={pp.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-                    ) : (
-                      <div className="w-full h-full bg-accent/10 flex items-center justify-center">
-                        <span className="text-accent text-4xl font-display">
-                          E
-                        </span>
-                      </div>
-                    )}
+                    <img
+                      src={pp.image_url || categoryImages[pp.category] || heroGymImg}
+                      alt={pp.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </Link>
                   <div className="flex items-center gap-2 text-xs text-muted-foreground mb-2">
                     <span>{formatDateShort(pp.published_at)}</span>

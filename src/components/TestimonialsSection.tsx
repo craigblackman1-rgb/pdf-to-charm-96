@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
         {/* Right - quote cards */}
         <div className="space-y-6">
           {testimonials.map((t) => (
-            <div key={t.name} className="bg-muted rounded-2xl p-6">
+            <div key={t.name} className="bg-muted rounded-2xl p-6 shadow-md">
               <div className="text-primary text-3xl mb-3 font-display">"</div>
               <p className="text-foreground font-body text-base leading-relaxed mb-5">{t.quote}</p>
               <div className="flex items-center gap-3">

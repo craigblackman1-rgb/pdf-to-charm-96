@@ -20,7 +20,7 @@ const WhoSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Card 1 */}
-          <div className="bg-background rounded-2xl overflow-hidden">
+          <div className="bg-background rounded-2xl overflow-hidden shadow-md">
             <div className="aspect-video overflow-hidden">
               <img src={whoHealthImg} alt="Training with health conditions Worthing" loading="lazy" className="w-full h-full object-cover" />
             </div>
@@ -38,7 +38,7 @@ const WhoSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-background rounded-2xl overflow-hidden">
+          <div className="bg-background rounded-2xl overflow-hidden shadow-md">
             <div className="aspect-video overflow-hidden">
               <img src={whoMobilityImg} alt="Inclusive personal training Worthing" loading="lazy" className="w-full h-full object-cover" />
             </div>

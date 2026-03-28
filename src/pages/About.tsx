@@ -132,7 +132,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {qualifications.map((q) => (
-              <div key={q.title} className="bg-background rounded-2xl p-6 border border-border">
+              <div key={q.title} className="bg-background rounded-2xl p-6 border border-border shadow-md">
                 <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center mb-4">
                   <q.icon className="w-5 h-5 text-accent-foreground" />
                 </div>
@@ -187,7 +187,7 @@ const About = () => {
               <p className="text-muted-foreground font-body text-base leading-relaxed mb-6">
                 The goal is not a six-week result. It is feeling stronger at sixty than you did at fifty. Being able to pick something up off the floor without pain. Having the energy to do the things you love. Moving through life with more ease and confidence than before. That takes time, consistency, and working with someone who genuinely understands your body and adjusts when things change.
               </p>
-              <div className="bg-background rounded-2xl p-5 mb-6 border border-border">
+              <div className="bg-background rounded-2xl p-5 mb-6 border border-border shadow-md">
                 <h4 className="text-foreground mb-2">More Than a Workout</h4>
                 <p className="text-muted-foreground font-body text-base leading-relaxed">
                   No weigh-ins. No before-and-after photos. No pressure to look a certain way. Just steady, meaningful progress — measured against your own baseline, not anyone else's.
@@ -228,7 +228,7 @@ const About = () => {
             <img src={studio2} alt="Training equipment at Eternal Fitness Worthing" loading="lazy" className="rounded-2xl w-full h-72 object-cover" />
           </div>
 
-          <div className="bg-accent rounded-2xl p-6 md:p-8 max-w-2xl">
+          <div className="bg-accent rounded-2xl p-6 md:p-8 max-w-2xl shadow-md">
             <h4 className="text-accent-foreground text-lg mb-2">Built for All Abilities</h4>
             <p className="text-accent-foreground/80 font-body text-base leading-relaxed">
               The studio is set up to accommodate a wide range of abilities and mobility levels. Equipment is chosen to support functional movement — not performance aesthetics. The environment is deliberately calm, because the last thing most clients need is more noise.
@@ -254,7 +254,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {longTermCards.map((card) => (
-              <div key={card.title} className="border border-border rounded-2xl overflow-hidden">
+              <div key={card.title} className="border border-border rounded-2xl overflow-hidden shadow-md">
                 <div className="h-48 bg-muted" />
                 <div className="p-5">
                   <h4 className="text-foreground text-lg mb-2">{card.title}</h4>

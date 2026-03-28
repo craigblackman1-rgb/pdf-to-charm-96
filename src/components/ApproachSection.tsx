@@ -52,7 +52,7 @@ const ApproachSection = () => {
         {/* Top cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-5">
           {approaches.map((item) => (
-            <div key={item.title} className="bg-muted rounded-2xl overflow-hidden">
+            <div key={item.title} className="bg-muted rounded-2xl overflow-hidden shadow-md">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={item.image}
@@ -72,7 +72,7 @@ const ApproachSection = () => {
         {/* Bottom cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
           {bottomCards.map((card) => (
-            <div key={card.title} className="bg-muted rounded-2xl p-6">
+            <div key={card.title} className="bg-muted rounded-2xl p-6 shadow-md">
               <h4 className="text-foreground text-lg mb-2">{card.title}</h4>
               <p className="text-muted-foreground text-base">{card.desc}</p>
             </div>
