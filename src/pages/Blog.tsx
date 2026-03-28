@@ -11,7 +11,7 @@ import { useConsultationDialog } from "@/hooks/useConsultationDialog";
 import { supabase } from "@/integrations/supabase/client";
 import blogHero from "@/assets/blog-hero.jpg";
 
-const categories = ["All", "Training", "Nutrition", "Recovery", "Mindset", "Rehabilitation"];
+const categories = ["All", "Training", "Nutrition", "Recovery", "General"];
 
 const Blog = () => {
   const { open, setOpen, openDialog } = useConsultationDialog();
