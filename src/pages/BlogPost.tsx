@@ -202,17 +202,21 @@ const BlogPost = () => {
               {/* Article Content */}
               {processedContent ? (
                 <div
-                  className="prose prose-lg max-w-none text-foreground
-                    prose-headings:text-foreground prose-headings:font-display prose-headings:font-bold
-                    prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border prose-h2:pb-2
-                    prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-                    prose-p:text-foreground/90 prose-p:leading-relaxed prose-p:mb-4
+                  className="prose prose-lg max-w-none font-body text-foreground
+                    prose-headings:font-display prose-headings:text-foreground
+                    prose-h1:font-extrabold prose-h1:text-3xl prose-h1:mt-10 prose-h1:mb-4
+                    prose-h2:font-bold prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-b prose-h2:border-border prose-h2:pb-2
+                    prose-h3:font-bold prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+                    prose-h4:font-semibold prose-h4:text-lg prose-h4:mt-6 prose-h4:mb-2
+                    prose-h5:font-semibold prose-h5:text-base prose-h5:mt-6 prose-h5:mb-2
+                    prose-h6:font-medium prose-h6:text-base prose-h6:mt-4 prose-h6:mb-2
+                    prose-p:font-normal prose-p:text-foreground/90 prose-p:leading-relaxed prose-p:mb-4
                     prose-a:text-accent prose-a:underline prose-a:underline-offset-2 hover:prose-a:text-accent/80
                     prose-strong:text-foreground prose-strong:font-semibold
                     prose-em:text-foreground/80 prose-em:italic
                     prose-ul:my-4 prose-ul:list-disc prose-ul:pl-6 prose-ul:space-y-2
                     prose-ol:my-4 prose-ol:list-decimal prose-ol:pl-6 prose-ol:space-y-2
-                    prose-li:text-foreground/90 prose-li:leading-relaxed
+                    prose-li:font-normal prose-li:text-foreground/90 prose-li:leading-relaxed
                     prose-blockquote:border-l-4 prose-blockquote:border-accent prose-blockquote:bg-muted/30 prose-blockquote:py-4 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:my-6 prose-blockquote:italic prose-blockquote:text-foreground/80
                     prose-img:rounded-xl prose-img:my-6 prose-img:shadow-md
                     prose-hr:border-border prose-hr:my-8"
