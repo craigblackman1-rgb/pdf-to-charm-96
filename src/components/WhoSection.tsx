@@ -13,7 +13,7 @@ const WhoSection = () => {
             </span>
             <h2 className="text-3xl md:text-4xl text-accent-foreground">If You Have Been Told Fitness Is Not for You — It Is</h2>
           </div>
-          <p className="text-accent-foreground/70 font-body text-sm max-w-sm">
+          <p className="text-accent-foreground/70 font-body text-base max-w-sm">
             Esther has worked with clients managing cancer, chronic illness, disability, visual impairment, neurological conditions, and complex mobility issues. She is here for the people other trainers cannot help.
           </p>
         </div>
@@ -28,7 +28,7 @@ const WhoSection = () => {
               <h3 className="text-foreground text-xl mb-2">
                 People managing health conditions, disability, or injury
               </h3>
-              <p className="text-muted-foreground font-body text-sm mb-4">
+              <p className="text-muted-foreground font-body text-base mb-4">
                 Cancer rehabilitation. Chronic illness. Neurological conditions. Post-surgical recovery. Extreme mobility limitations. Esther is Level 4 qualified and exercise referral trained — she knows how to work safely and effectively with complex needs.
               </p>
               <a href="/personal-training" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity">
@@ -46,7 +46,7 @@ const WhoSection = () => {
               <h3 className="text-foreground text-xl mb-2">
                 People who have never felt welcome in fitness spaces
               </h3>
-              <p className="text-muted-foreground font-body text-sm">
+              <p className="text-muted-foreground font-body text-base">
                 Whether you are a complete beginner, have had negative experiences elsewhere, or simply find gyms intimidating — the private, one-to-one format at Eternal Fitness is designed to feel completely different. No dress code, no weigh-in, no comparison to anyone else.
               </p>
             </div>

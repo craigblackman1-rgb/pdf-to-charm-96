@@ -73,7 +73,7 @@ const Contact = () => {
             <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
               ✦ Reach Out
             </span>
-            <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-4">
+            <h2 className="font-display text-3xl md:text-4xl text-foreground leading-tight mb-4">
               No Pressure, No Commitment
             </h2>
             <p className="text-muted-foreground font-body text-base mb-3">
@@ -89,7 +89,7 @@ const Contact = () => {
                   <Phone className="w-4 h-4 text-accent" />
                 </span>
                 <div>
-                  <p className="font-body font-semibold text-foreground text-sm">Phone</p>
+                  <p className="font-body font-semibold text-foreground text-base">Phone</p>
                   <a href="tel:07517658128" className="text-muted-foreground text-sm hover:text-foreground transition-colors">07517 658 128</a>
                 </div>
               </div>
@@ -98,7 +98,7 @@ const Contact = () => {
                   <Mail className="w-4 h-4 text-accent" />
                 </span>
                 <div>
-                  <p className="font-body font-semibold text-foreground text-sm">Email</p>
+                  <p className="font-body font-semibold text-foreground text-base">Email</p>
                   <a href="mailto:esther.fair@eternal-fitness.co.uk" className="text-muted-foreground text-sm hover:text-foreground transition-colors">esther.fair@eternal-fitness.co.uk</a>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const Contact = () => {
                   <MapPin className="w-4 h-4 text-accent" />
                 </span>
                 <div>
-                  <p className="font-body font-semibold text-foreground text-sm">Studio location</p>
+                  <p className="font-body font-semibold text-foreground text-base">Studio location</p>
                   <p className="text-muted-foreground text-sm">Private studio, Worthing, West Sussex<br />
                     <span className="text-xs text-muted-foreground/70">Full address confirmed on booking</span>
                   </p>
@@ -116,14 +116,14 @@ const Contact = () => {
             </div>
 
             <div className="bg-muted rounded-2xl p-5 mb-8">
-              <p className="text-foreground font-body text-sm font-medium mb-1">Not sure where to start?</p>
-              <p className="text-muted-foreground font-body text-sm leading-relaxed">
+              <p className="text-foreground font-body text-base font-medium mb-1">Not sure where to start?</p>
+              <p className="text-muted-foreground font-body text-base leading-relaxed">
                 The initial consultation is completely free. It is just a conversation — about you, your situation, and whether this is the right fit. There is no sales pitch and no obligation to proceed.
               </p>
             </div>
 
             <div className="border-t border-border pt-6">
-              <h4 className="font-body font-semibold text-foreground text-sm mb-3">Follow Esther</h4>
+              <h4 className="font-body font-semibold text-foreground text-base mb-3">Follow Esther</h4>
               <div className="flex gap-2">
                 <a href="https://www.facebook.com/EternalFitnessPersonalTraining/" target="_blank" rel="noopener noreferrer" aria-label="Follow Esther on Facebook" className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground hover:opacity-80 transition-opacity">
                   <SocialIcon name="facebook" />
@@ -144,7 +144,7 @@ const Contact = () => {
           {/* Right - form */}
           <div>
             <h3 className="font-body font-semibold text-foreground text-lg mb-2">Send a Message</h3>
-            <p className="text-muted-foreground font-body text-sm mb-6">
+            <p className="text-muted-foreground font-body text-base mb-6">
               Fill in the form below and Esther will get back to you personally. There is no such thing as the wrong question.
             </p>
             <form onSubmit={handleSubmit} className="space-y-5">

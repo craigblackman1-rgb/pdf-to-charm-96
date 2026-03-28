@@ -145,7 +145,7 @@ const BlogPost = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4">
             Blog
           </h1>
-          <p className="text-primary-foreground/70 max-w-xl mx-auto text-sm md:text-base mb-8">
+          <p className="text-primary-foreground/70 max-w-xl mx-auto text-base md:text-lg mb-8">
             Expert advice on training, nutrition, recovery and mindset from
             Eternal Fitness in Worthing.
           </p>
@@ -251,17 +251,17 @@ const BlogPost = () => {
                         {post.author_name}
                       </h4>
                     </div>
-                    <p className="text-muted-foreground text-xs mt-1">
+                    <p className="text-muted-foreground text-sm mt-1">
                       Eternal Fitness Coach
                     </p>
                   </div>
                 </div>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                <p className="text-muted-foreground text-base leading-relaxed mb-4">
                   Passionate about helping people achieve their fitness goals
                   through personalised training and evidence-based coaching.
                 </p>
                 <div>
-                  <p className="text-xs text-muted-foreground mb-2">
+                  <p className="text-sm text-muted-foreground mb-2">
                     Share with your community!
                   </p>
                   <div className="flex gap-2">
@@ -394,10 +394,10 @@ const BlogPost = () => {
                           {featuredPost.author_name}
                         </span>
                       </div>
-                      <h5 className="text-sm font-bold text-white">
+                      <h5 className="text-base font-bold text-white">
                         {featuredPost.title}
                       </h5>
-                      <span className="inline-block bg-accent text-accent-foreground text-[10px] font-semibold px-2.5 py-1 rounded-full mt-2">
+                      <span className="inline-block bg-accent text-accent-foreground text-xs font-semibold px-2.5 py-1 rounded-full mt-2">
                         {featuredPost.category}
                       </span>
                     </div>
@@ -414,7 +414,7 @@ const BlogPost = () => {
         <section className="py-16 md:py-24 px-6 md:px-12">
           <div className="max-w-6xl mx-auto">
             <div className="flex items-center justify-between mb-10">
-              <h2 className="text-2xl md:text-3xl text-foreground">
+              <h2 className="text-3xl md:text-4xl text-foreground">
                 Popular Post
               </h2>
               <Link
@@ -458,7 +458,7 @@ const BlogPost = () => {
                     </h3>
                   </Link>
                   {pp.excerpt && (
-                    <p className="text-muted-foreground text-sm mb-3 line-clamp-3">
+                    <p className="text-muted-foreground text-base mb-3 line-clamp-3">
                       {pp.excerpt}
                     </p>
                   )}
@@ -481,7 +481,7 @@ const BlogPost = () => {
           <h2 className="font-display text-3xl md:text-4xl text-primary-foreground leading-tight mb-4">
             Book a Personal Training Session in Worthing
           </h2>
-          <p className="text-primary-foreground/60 text-sm md:text-base mb-8">
+          <p className="text-primary-foreground/60 text-base md:text-lg mb-8">
             Want a simple plan based on your body and goals? Book a free
             consultation and we'll map out a safe return to training approach
             that feels good and fits your week.
