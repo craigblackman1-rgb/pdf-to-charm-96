@@ -12,6 +12,7 @@ import PersonalTraining from "./pages/PersonalTraining.tsx";
 import Pricing from "./pages/Pricing.tsx";
 import Blog from "./pages/Blog.tsx";
 import BlogPost from "./pages/BlogPost.tsx";
+import CookiesPolicy from "./pages/CookiesPolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms" element={<TermsCondition />} />
+          <Route path="/cookies-policy" element={<CookiesPolicy />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/personal-training" element={<PersonalTraining />} />
           <Route path="/pricing" element={<Pricing />} />
