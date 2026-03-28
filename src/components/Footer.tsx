@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
+import SocialIcon from "@/components/SocialIcons";
 
 const Footer = () => {
   return (
     <footer id="contact" className="bg-background border-t border-border py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-        {/* Brand */}
         <div>
           <Link to="/" className="font-display text-xl italic text-foreground">
             Eternal <span className="text-primary">♥</span> Fitness
@@ -24,7 +24,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Navigation */}
         <div>
           <h4 className="font-body font-semibold text-foreground text-sm mb-4">Services</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
@@ -36,7 +35,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Help */}
         <div>
           <h4 className="font-body font-semibold text-foreground text-sm mb-4">Information</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
@@ -45,30 +43,29 @@ const Footer = () => {
             <li><Link to="/faqs" className="hover:text-foreground transition-colors">FAQs</Link></li>
             <li><Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link></li>
             <li><Link to="/terms" className="hover:text-foreground transition-colors">Terms & Conditions</Link></li>
-            <li><Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link></li>
-            <li><Link to="/cookies-policy" className="hover:text-foreground transition-colors">Cookies Policy</Link></li>
           </ul>
         </div>
 
-        {/* Social */}
         <div>
           <h4 className="font-body font-semibold text-foreground text-sm mb-4">Follow me on Facebook</h4>
           <div className="flex gap-3">
-            <span
-              className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground text-xs font-bold cursor-pointer hover:opacity-80 transition-opacity"
+            <a
+              href="https://www.facebook.com/EternalFitnessPersonalTraining/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow Esther on Facebook"
+              className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground hover:opacity-80 transition-opacity"
             >
-              F
-            </span>
+              <SocialIcon name="facebook" />
+            </a>
           </div>
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <span>© 2026 Eternal Fitness | Esther Fair | Worthing, West Sussex</span>
         <div className="flex gap-4">
-          <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
-          <Link to="/cookies-policy" className="hover:text-foreground transition-colors">Cookies Policy</Link>
+          <Link to="/terms" className="hover:text-foreground transition-colors">Privacy Policy</Link>
           <Link to="/terms" className="hover:text-foreground transition-colors">Terms & Conditions</Link>
         </div>
       </div>
