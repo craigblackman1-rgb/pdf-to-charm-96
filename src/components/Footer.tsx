@@ -54,7 +54,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow Esther on Facebook"
-              className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground hover:opacity-80 transition-opacity"
+              className="w-8 h-8 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent hover:bg-accent hover:text-accent-foreground transition-colors"
             >
               <SocialIcon name="facebook" />
             </a>
