@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowUpRight, Phone, Mail, MapPin } from "lucide-react";
+import SocialIcon from "@/components/SocialIcons";
 import { toast } from "sonner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -123,12 +124,19 @@ const Contact = () => {
 
             <div className="border-t border-border pt-6">
               <h4 className="font-body font-semibold text-foreground text-sm mb-3">Follow Esther</h4>
-              <div className="flex gap-3">
-                {["Facebook", "Instagram", "LinkedIn", "YouTube"].map((name) => (
-                  <span key={name} className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground text-xs font-bold cursor-pointer hover:opacity-80 transition-opacity">
-                    {name[0]}
-                  </span>
-                ))}
+              <div className="flex gap-2">
+                <a href="https://www.facebook.com/EternalFitnessPersonalTraining/" target="_blank" rel="noopener noreferrer" aria-label="Follow Esther on Facebook" className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground hover:opacity-80 transition-opacity">
+                  <SocialIcon name="facebook" />
+                </a>
+                <span title="Instagram — coming soon" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground opacity-40 cursor-default">
+                  <SocialIcon name="instagram" />
+                </span>
+                <span title="YouTube — coming soon" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground opacity-40 cursor-default">
+                  <SocialIcon name="youtube" />
+                </span>
+                <span title="TikTok — coming soon" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground opacity-40 cursor-default">
+                  <SocialIcon name="tiktok" />
+                </span>
               </div>
             </div>
           </div>
