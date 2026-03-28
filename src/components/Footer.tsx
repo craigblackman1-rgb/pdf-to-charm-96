@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
 import SocialIcon from "@/components/SocialIcons";
+import EternalFitnessLogo from "@/components/EternalFitnessLogo";
 
 const Footer = () => {
   return (
     <footer id="contact" className="bg-background border-t border-border py-16 px-6 md:px-12">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
-          <Link to="/" className="font-display text-xl italic text-foreground">
-            Eternal <span className="text-primary">♥</span> Fitness
+          <Link to="/" className="inline-block">
+            <EternalFitnessLogo variant="dark" className="h-7 w-auto" />
           </Link>
           <p className="text-muted-foreground text-xs mt-3 mb-6 leading-relaxed">
             Private, one-to-one personal training in Worthing. Level 4 qualified. Exercise referral specialist. Cancer rehabilitation.
