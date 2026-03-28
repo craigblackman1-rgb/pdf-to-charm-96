@@ -52,23 +52,20 @@ const Footer = () => {
 
         {/* Social */}
         <div>
-          <h4 className="font-body font-semibold text-foreground text-sm mb-4">Follow Esther</h4>
+          <h4 className="font-body font-semibold text-foreground text-sm mb-4">Follow me on Facebook</h4>
           <div className="flex gap-3">
-            {["Facebook", "Instagram", "LinkedIn", "YouTube"].map((name) => (
-              <span
-                key={name}
-                className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground text-xs font-bold cursor-pointer hover:opacity-80 transition-opacity"
-              >
-                {name[0]}
-              </span>
-            ))}
+            <span
+              className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground text-xs font-bold cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              F
+            </span>
           </div>
         </div>
       </div>
 
       {/* Bottom bar */}
       <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
-        <span>© 2025 Eternal Fitness | Esther Fair | Worthing, West Sussex</span>
+        <span>© 2026 Eternal Fitness | Esther Fair | Worthing, West Sussex</span>
         <div className="flex gap-4">
           <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
           <Link to="/cookies-policy" className="hover:text-foreground transition-colors">Cookies Policy</Link>

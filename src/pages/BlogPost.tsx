@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { ArrowUpRight, Linkedin, Facebook, Twitter, Link2 } from "lucide-react";
+import { ArrowUpRight, Facebook, Twitter, Link2 } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ConsultationDialog from "@/components/ConsultationDialog";
@@ -232,9 +232,6 @@ const BlogPost = () => {
                       <h4 className="font-bold text-foreground">
                         {post.author_name}
                       </h4>
-                      <span className="w-5 h-5 rounded bg-[#0077B5] flex items-center justify-center">
-                        <Linkedin className="w-3 h-3 text-white" />
-                      </span>
                     </div>
                     <p className="text-muted-foreground text-xs mt-1">
                       Eternal Fitness Coach
