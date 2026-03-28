@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail } from "lucide-react";
 import SocialIcon from "@/components/SocialIcons";
+import EternalFitnessLogo from "@/components/EternalFitnessLogo";
 
 const Footer = () => {
   return (
