@@ -26,7 +26,7 @@ const WhySection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
           {cards.map((card) => (
-            <div key={card.title} className="relative rounded-2xl overflow-hidden aspect-[4/5] group">
+            <div key={card.title} className="relative rounded-2xl overflow-hidden aspect-[4/5] group shadow-md">
               <img
                 src={card.image}
                 alt={card.title}

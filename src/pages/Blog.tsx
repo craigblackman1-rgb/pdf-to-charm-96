@@ -10,8 +10,19 @@ import ConsultationDialog from "@/components/ConsultationDialog";
 import { useConsultationDialog } from "@/hooks/useConsultationDialog";
 import { supabase } from "@/integrations/supabase/client";
 import blogHero from "@/assets/blog-hero.jpg";
+import strengthImg from "@/assets/strength-tasks.jpg";
+import mobilityImg from "@/assets/mobility-movement.jpg";
+import mindBodyImg from "@/assets/mind-body.jpg";
+import heroGymImg from "@/assets/hero-gym.jpg";
 
 const categories = ["All", "Training", "Nutrition", "Recovery", "General"];
+
+const categoryImages: Record<string, string> = {
+  Training: strengthImg,
+  Nutrition: mindBodyImg,
+  Recovery: mobilityImg,
+  General: heroGymImg,
+};
 
 const Blog = () => {
   const { open, setOpen, openDialog } = useConsultationDialog();
@@ -209,18 +220,12 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
 
   return (
     <Link to={`/blog/${post.slug}`} className="group block">
-      <div className="rounded-2xl overflow-hidden mb-4 aspect-[4/3] bg-muted">
-        {post.image_url ? (
-          <img
-            src={post.image_url}
-            alt={post.title}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-          />
-        ) : (
-          <div className="w-full h-full bg-accent/10 flex items-center justify-center">
-            <span className="text-accent text-4xl font-display">E♥F</span>
-          </div>
-        )}
+      <div className="rounded-2xl overflow-hidden mb-4 aspect-[4/3] bg-muted shadow-md">
+        <img
+          src={post.image_url || categoryImages[post.category] || heroGymImg}
+          alt={post.title}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+        />
       </div>
       <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
         {post.title}
@@ -251,19 +256,15 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
 const FeaturedCard = ({ post, large }: { post: BlogPost; large?: boolean }) => (
   <Link
     to={`/blog/${post.slug}`}
-    className={`group block rounded-2xl overflow-hidden relative ${
+    className={`group block rounded-2xl overflow-hidden relative shadow-md ${
       large ? "h-full min-h-[400px]" : "h-48"
     }`}
   >
-    {post.image_url ? (
-      <img
-        src={post.image_url}
-        alt={post.title}
-        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-      />
-    ) : (
-      <div className="absolute inset-0 bg-section-dark" />
-    )}
+    <img
+      src={post.image_url || categoryImages[post.category] || heroGymImg}
+      alt={post.title}
+      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+    />
     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
     <div className="absolute bottom-0 left-0 right-0 p-5">
       <div className="flex gap-2 mb-2">

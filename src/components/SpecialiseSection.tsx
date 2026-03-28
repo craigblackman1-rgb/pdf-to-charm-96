@@ -30,7 +30,7 @@ const SpecialiseSection = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[180px]">
           {images.map((img, i) => (
-            <div key={i} className={`relative rounded-xl overflow-hidden group ${img.span}`}>
+            <div key={i} className={`relative rounded-xl overflow-hidden group shadow-md ${img.span}`}>
               <img
                 src={img.src}
                 alt={img.label || "Personal training Worthing"}

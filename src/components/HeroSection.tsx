@@ -44,7 +44,7 @@ const HeroSection = ({ onBookConsultation }: HeroSectionProps) => {
       {/* Social proof bar */}
       <div className="relative z-10 px-6 pb-8 pt-12">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="bg-background/10 backdrop-blur-md rounded-2xl p-5 flex items-center gap-4 border border-primary-foreground/10">
+          <div className="bg-background/10 backdrop-blur-md rounded-2xl p-5 flex items-center gap-4 border border-primary-foreground/10 shadow-md">
             <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
               <span className="text-primary text-xl font-bold">4</span>
             </div>
@@ -53,13 +53,13 @@ const HeroSection = ({ onBookConsultation }: HeroSectionProps) => {
               <p className="text-primary-foreground/60 text-sm">The highest personal training qualification in the UK — plus exercise referral and cancer rehabilitation.</p>
             </div>
           </div>
-          <div className="bg-background/10 backdrop-blur-md rounded-2xl p-5 border border-primary-foreground/10">
+          <div className="bg-background/10 backdrop-blur-md rounded-2xl p-5 border border-primary-foreground/10 shadow-md">
             <p className="text-primary-foreground/80 text-base italic mb-2">
               "As someone who has dealt with chronic pain for years, I was sceptical. But the personalised approach has genuinely changed my quality of life."
             </p>
             <p className="text-primary-foreground font-semibold text-sm">Angela M · <span className="text-primary-foreground/50">Worthing client</span></p>
           </div>
-          <div className="bg-primary rounded-2xl p-5 flex flex-col justify-center">
+          <div className="bg-primary rounded-2xl p-5 flex flex-col justify-center shadow-md">
             <h4 className="text-primary-foreground text-lg mb-1">Free Consultation</h4>
             <p className="text-primary-foreground/80 text-sm">Every new client starts with a free 30-minute conversation. No commitment, no sales pitch.</p>
           </div>
