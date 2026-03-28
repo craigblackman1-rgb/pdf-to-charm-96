@@ -21,8 +21,8 @@ const Navbar = ({ onBookConsultation }: NavbarProps) => {
 
   return (
     <nav className="absolute top-0 left-0 w-full z-50 px-6 md:px-12 py-5 flex items-center justify-between">
-      <Link to="/" className="font-display text-xl md:text-2xl tracking-wide text-primary-foreground italic">
-        Eternal <span className="text-primary">♥</span> Fitness
+      <Link to="/" className="flex items-center">
+        <EternalFitnessLogo variant="light" className="h-7 md:h-8 w-auto" />
       </Link>
 
       {/* Desktop */}
