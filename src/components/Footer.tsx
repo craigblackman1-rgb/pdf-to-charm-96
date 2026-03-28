@@ -45,6 +45,8 @@ const Footer = () => {
             <li><Link to="/faqs" className="hover:text-foreground transition-colors">FAQs</Link></li>
             <li><Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link></li>
             <li><Link to="/terms" className="hover:text-foreground transition-colors">Terms & Conditions</Link></li>
+            <li><Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link></li>
+            <li><Link to="/cookies-policy" className="hover:text-foreground transition-colors">Cookies Policy</Link></li>
           </ul>
         </div>
 
@@ -68,7 +70,8 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
         <span>© 2025 Eternal Fitness | Esther Fair | Worthing, West Sussex</span>
         <div className="flex gap-4">
-          <Link to="/terms" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+          <Link to="/privacy-policy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+          <Link to="/cookies-policy" className="hover:text-foreground transition-colors">Cookies Policy</Link>
           <Link to="/terms" className="hover:text-foreground transition-colors">Terms & Conditions</Link>
         </div>
       </div>
