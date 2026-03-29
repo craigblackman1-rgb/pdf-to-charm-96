@@ -260,15 +260,10 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {longTermCards.map((card) => (
-<<<<<<< Updated upstream
-              <div key={card.title} className="border border-border rounded-2xl overflow-hidden shadow-md">
-                <div className="h-48 bg-muted" />
-=======
               <div key={card.title} className="border border-border rounded-2xl overflow-hidden">
                 <div className="h-48 overflow-hidden">
                   <img src={card.image} alt={card.title} loading="lazy" className="w-full h-full object-cover" />
                 </div>
->>>>>>> Stashed changes
                 <div className="p-5">
                   <h4 className="text-foreground text-lg mb-2">{card.title}</h4>
                   <p className="text-muted-foreground font-body text-base">{card.desc}</p>

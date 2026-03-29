@@ -43,13 +43,8 @@ const FAQSection = () => {
           <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
             ✦ Questions
           </span>
-<<<<<<< Updated upstream
-          <h2 className="font-display text-3xl md:text-4xl text-foreground leading-tight mb-4">
-            Frequently asked question
-=======
           <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-4">
             Common questions
->>>>>>> Stashed changes
           </h2>
           <p className="text-muted-foreground font-body text-lg mb-8">
             If something is holding you back, the answer is probably here. And if it is not — just ask.
