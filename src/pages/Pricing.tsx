@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { ArrowUpRight, Check, Heart, Dumbbell, Target } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import FAQSection from "@/components/FAQSection";
@@ -11,72 +10,73 @@ import valueImg from "@/assets/pricing-value.jpg";
 
 const plans = [
   {
-    name: "Starter",
-    monthlyPrice: 0,
-    yearlyPrice: 0,
+    name: "Single Session",
+    price: "£45",
+    per: "per session",
     popular: false,
+    description: "Pay as you go. Ideal if you want to try a session before committing to a block.",
     features: [
-      "Basic growth audit (website + socials)",
-      "1 platform recommendation plan",
-      "1 ad concept + creative direction",
-      "Keyword + competitor snapshot",
-      "Starter reporting template",
-      "Email support",
+      "60-minute one-to-one session",
+      "Programme adapted to your needs",
+      "Private studio in Worthing",
+      "Full health and mobility assessment on first visit",
     ],
+    cta: "Book a Free Consultation First",
   },
   {
-    name: "Growth",
-    monthlyPrice: 9,
-    yearlyPrice: 90,
+    name: "Block of 12",
+    price: "£480",
+    per: "£40 per session",
     popular: true,
+    description: "The most popular choice. Enough sessions to build real momentum and see meaningful change.",
     features: [
-      "Everything in Starter",
-      "Ad campaign setup + management",
-      "2–4 creatives per month",
-      "Weekly optimization + A/B testing",
-      "Conversion tracking setup guidance",
-      "Weekly performance report",
+      "12 × 60-minute sessions",
+      "Save £5 per session vs pay-as-you-go",
+      "Programme review and adjustment included",
+      "Private studio in Worthing",
+      "Sessions used at your pace — no expiry pressure",
     ],
+    cta: "Book a Free Consultation",
   },
   {
-    name: "Scale",
-    monthlyPrice: 29,
-    yearlyPrice: 290,
+    name: "Block of 24",
+    price: "£840",
+    per: "£35 per session",
     popular: false,
+    description: "Best value. For clients committed to long-term progress with complex or ongoing health needs.",
     features: [
-      "Everything in Growth",
-      "Advanced tracking",
-      "Retargeting + lookalike audiences",
-      "Monthly strategy call",
-      "Multi-platform ads",
-      "Priority chat support",
+      "24 × 60-minute sessions",
+      "Save £10 per session vs pay-as-you-go",
+      "Ongoing programme management",
+      "Priority scheduling",
+      "Private studio in Worthing",
     ],
+    cta: "Book a Free Consultation",
   },
 ];
 
 const valueProps = [
   {
     icon: Heart,
-    title: "Invest in Your Long-Term Health",
+    title: "One person. One trainer. One focus.",
     description:
-      "Your health isn't a short-term purchase—it's a long-term investment in your energy, confidence, and overall quality of life. Prioritizing wellness now pays dividends for years to come.",
+      "Every session is entirely about you — your body, your health history, your goals. There are no group classes, no generic programmes, and no one-size-fits-all approach.",
   },
   {
     icon: Dumbbell,
-    title: "Personalized Coaching That Works",
+    title: "Qualified to work where others cannot",
     description:
-      "Our pricing reflects personalized coaching focused on real, sustainable change—not quick fixes. You're paying for private sessions, tailored programs, and expert guidance designed around your goals.",
+      "Level 4 personal trainer with specialist qualifications in exercise referral and cancer rehabilitation. The price reflects expertise that is genuinely rare in any fitness setting.",
   },
   {
     icon: Target,
-    title: "Build Habits That Last",
+    title: "The first conversation is always free",
     description:
-      "Most importantly, you're investing in a process that develops strength, consistency, and lasting habits. After your consultation, we'll recommend the right level of support to help you progress safely and effectively.",
+      "Every new client starts with a free 30-minute consultation. No commitment, no pressure. Esther will recommend which option makes sense for your situation — not the most expensive one.",
   },
 ];
 
 const Pricing = () => {
-  const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
   const { open, setOpen, openDialog } = useConsultationDialog();
 
   return (
@@ -85,14 +85,14 @@ const Pricing = () => {
 
       {/* Hero */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <img src={heroImg} alt="Personal training pricing" className="absolute inset-0 w-full h-full object-cover" />
+        <img src={heroImg} alt="Personal training pricing Worthing" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-hero-overlay/70" />
         <div className="relative z-10 text-center max-w-3xl px-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-5">
-            Simple pricing. Personal coaching. Real progress.
+            Straightforward pricing. No contracts. No surprises.
           </h1>
           <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">
-            Our pricing reflects premium 1:1 support, tailored programming, and accountability that helps you build long-term results. We start with a consultation so you only invest in what you actually need.
+            Every client starts with a free consultation. From there, choose the level of commitment that suits your situation — and change it as your needs change.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button
@@ -105,21 +105,21 @@ const Pricing = () => {
               href="#pricing"
               className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-7 py-3 rounded-full font-medium hover:bg-primary-foreground/10 transition-colors"
             >
-              Ask a Question
+              See Pricing
             </a>
           </div>
         </div>
       </section>
 
-      {/* Investment in Your Wellbeing */}
+      {/* Why the price is what it is */}
       <section className="py-20 md:py-28 px-6 md:px-12 bg-background">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <div>
             <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-              ✦ Wellbeing That Pays Off
+              ✦ What You Are Investing In
             </span>
             <h2 className="text-3xl md:text-5xl text-foreground leading-tight mb-10">
-              Investment in Your Wellbeing
+              This is not a gym membership
             </h2>
             <div className="space-y-8">
               {valueProps.map((prop, i) => (
@@ -128,7 +128,7 @@ const Pricing = () => {
                     <prop.icon className="w-5 h-5 text-primary" />
                   </div>
                   <div>
-                    <h4 className="font-display text-foreground text-lg mb-1">{prop.title}</h4>
+                    <h4 className="text-foreground text-base mb-1">{prop.title}</h4>
                     <p className="text-muted-foreground font-body text-sm leading-relaxed">{prop.description}</p>
                   </div>
                 </div>
@@ -136,7 +136,7 @@ const Pricing = () => {
             </div>
           </div>
           <div className="relative rounded-2xl overflow-hidden h-[500px]">
-            <img src={valueImg} alt="Personal training session" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+            <img src={valueImg} alt="One-to-one personal training session Worthing" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
       </section>
@@ -151,33 +151,11 @@ const Pricing = () => {
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6">
               <div>
                 <h2 className="text-3xl md:text-5xl text-primary-foreground leading-tight mb-2">
-                  Simple, Transparent Pricing
+                  Choose what works for you
                 </h2>
                 <p className="text-primary-foreground/60 font-body text-lg">
-                  No contracts. No surprise fees.
+                  All sessions are 60 minutes, one-to-one, in a private studio in Worthing.
                 </p>
-              </div>
-              <div className="flex bg-primary-foreground/10 rounded-full p-1">
-                <button
-                  onClick={() => setBilling("monthly")}
-                  className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
-                    billing === "monthly"
-                      ? "bg-accent text-accent-foreground"
-                      : "text-primary-foreground/60 hover:text-primary-foreground"
-                  }`}
-                >
-                  Monthly
-                </button>
-                <button
-                  onClick={() => setBilling("yearly")}
-                  className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
-                    billing === "yearly"
-                      ? "bg-accent text-accent-foreground"
-                      : "text-primary-foreground/60 hover:text-primary-foreground"
-                  }`}
-                >
-                  Yearly
-                </button>
               </div>
             </div>
           </div>
@@ -193,20 +171,18 @@ const Pricing = () => {
                 }`}
               >
                 {plan.popular && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-medium px-4 py-1 rounded-full">
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-medium px-4 py-1 rounded-full whitespace-nowrap">
                     Most Popular
                   </span>
                 )}
-                <div className="mb-6">
+                <div className="mb-3">
+                  <p className="text-muted-foreground font-body text-sm mb-2">{plan.name}</p>
                   <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-4xl font-display text-foreground">
-                      ${billing === "monthly" ? plan.monthlyPrice : plan.yearlyPrice}
-                    </span>
-                    <span className="text-muted-foreground text-sm font-body">
-                      /{billing === "monthly" ? "month" : "year"}
-                    </span>
+                    <span className="text-4xl font-display text-foreground">{plan.price}</span>
                   </div>
+                  <p className="text-muted-foreground text-sm font-body">{plan.per}</p>
                 </div>
+                <p className="text-muted-foreground font-body text-sm mb-6 leading-relaxed">{plan.description}</p>
                 <ul className="space-y-3 mb-8 flex-1">
                   {plan.features.map((feature, j) => (
                     <li key={j} className="flex items-start gap-2 text-sm font-body text-muted-foreground">
@@ -223,10 +199,16 @@ const Pricing = () => {
                       : "bg-muted text-foreground"
                   }`}
                 >
-                  Choose Plan
+                  {plan.cta}
                 </button>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 bg-background/5 border border-primary-foreground/10 rounded-2xl p-6 max-w-2xl">
+            <p className="text-primary-foreground/70 font-body text-sm leading-relaxed">
+              <strong className="text-primary-foreground">Not sure which to choose?</strong> Start with the free consultation. Esther will give you an honest recommendation based on your situation — not the most expensive option.
+            </p>
           </div>
         </div>
       </section>

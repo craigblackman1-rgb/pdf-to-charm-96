@@ -156,9 +156,14 @@ const BlogPost = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4">
             Blog
           </h1>
+<<<<<<< Updated upstream
           <p className="text-primary-foreground/70 max-w-xl mx-auto text-base md:text-lg mb-8">
             Expert advice on training, nutrition, recovery and mindset from
             Eternal Fitness in Worthing.
+=======
+          <p className="text-primary-foreground/70 max-w-xl mx-auto text-sm md:text-base mb-8">
+            Practical articles on training, health, and moving well — written for people whose situations are rarely straightforward.
+>>>>>>> Stashed changes
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <button

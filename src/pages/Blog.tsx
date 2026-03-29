@@ -64,10 +64,15 @@ const Blog = () => {
         <Navbar onBookConsultation={openDialog} />
         <div className="relative z-10 text-center px-6 pt-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4">
-            Our Blogs
+            Articles & Insights
           </h1>
+<<<<<<< Updated upstream
           <p className="text-primary-foreground/70 max-w-xl mx-auto text-base md:text-lg mb-8">
             Dive into our blog for expert insights, tips, and industry trends to support your health and fitness journey.
+=======
+          <p className="text-primary-foreground/70 max-w-xl mx-auto text-sm md:text-base mb-8">
+            Practical guidance on training, health conditions, and moving well — from a Level 4 specialist in Worthing.
+>>>>>>> Stashed changes
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <button
@@ -94,10 +99,15 @@ const Blog = () => {
               Our Blogs
             </span>
             <h2 className="text-3xl md:text-4xl text-foreground mb-4">
-              Insights and Inspiration, Explore Our Blog
+            Practical Articles on Training and Health
             </h2>
+<<<<<<< Updated upstream
             <p className="text-muted-foreground max-w-xl mx-auto text-base">
               Dive into our blog for expert insights, tips, and industry trends to elevate your health and fitness journey.
+=======
+            <p className="text-muted-foreground max-w-xl mx-auto text-sm">
+            Written for people managing health conditions, injuries, and complex needs — not generic fitness advice.
+>>>>>>> Stashed changes
             </p>
           </div>
 
