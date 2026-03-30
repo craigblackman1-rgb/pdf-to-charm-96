@@ -59,19 +59,19 @@ const valueProps = [
     icon: Heart,
     title: "Invest in Your Long-Term Health",
     description:
-      "Your health isn't a short-term purchase—it's a long-term investment in your energy, confidence, and overall quality of life. Prioritizing wellness now pays dividends for years to come.",
+      "Your health is not a short-term purchase — it is a long-term investment in your energy, confidence, and overall quality of life. Prioritising wellness now pays dividends for years to come.",
   },
   {
     icon: Dumbbell,
     title: "Personalized Coaching That Works",
     description:
-      "Our pricing reflects personalized coaching focused on real, sustainable change—not quick fixes. You're paying for private sessions, tailored programs, and expert guidance designed around your goals.",
+      "My pricing reflects personalised coaching focused on real, sustainable change — not quick fixes. You are paying for private sessions, tailored programmes, and expert guidance designed around your goals.",
   },
   {
     icon: Target,
     title: "Build Habits That Last",
     description:
-      "Most importantly, you're investing in a process that develops strength, consistency, and lasting habits. After your consultation, we'll recommend the right level of support to help you progress safely and effectively.",
+      "Most importantly, you are investing in a process that develops strength, consistency, and lasting habits. After your consultation, I will recommend the right level of support to help you progress safely and effectively.",
   },
 ];
 
@@ -92,7 +92,7 @@ const Pricing = () => {
             Simple pricing. Personal coaching. Real progress.
           </h1>
           <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">
-            Our pricing reflects premium 1:1 support, tailored programming, and accountability that helps you build long-term results. We start with a consultation so you only invest in what you actually need.
+            My pricing reflects premium 1:1 support, tailored programming, and accountability that helps you build long-term results. I start with a free consultation so you only invest in what you actually need.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button

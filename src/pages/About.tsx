@@ -7,7 +7,7 @@ import { useConsultationDialog } from "@/hooks/useConsultationDialog";
 
 import aboutHero from "@/assets/about-hero.jpg";
 import aboutPhilosophy from "@/assets/about-philosophy.jpg";
-import coachPatricia from "@/assets/coach-patricia.jpg";
+import estherAbout from "@/assets/esther-about.jpg";
 import studio1 from "@/assets/studio-1.jpg";
 import studio2 from "@/assets/studio-2.jpg";
 
@@ -57,10 +57,10 @@ const About = () => {
         <div className="absolute inset-0 bg-hero-overlay/65" />
         <div className="relative z-10 text-center max-w-3xl px-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-5">
-            About Esther — and Why She Does This
+            About Me — and Why I Do This
           </h1>
           <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">
-            Level 4 personal trainer. Exercise referral specialist. Cancer rehabilitation qualified. And someone who knows first-hand what it feels like to start from zero.
+            Level 4 personal trainer. Exercise referral specialist. Cancer rehabilitation qualified. I know first-hand what it feels like to start from zero.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button
@@ -73,7 +73,7 @@ const About = () => {
               href="#story"
               className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-7 py-3 rounded-full font-medium hover:bg-primary-foreground/10 transition-colors"
             >
-              Esther's Story
+              My Story
             </a>
           </div>
         </div>
@@ -84,21 +84,21 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center mb-6">
             <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium">
-              ✦ Esther's Story
+              ✦ My Story
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl text-foreground text-center mb-14">She Has Been Where You Are</h2>
+          <h2 className="text-3xl md:text-4xl text-foreground text-center mb-14">I Have Been Where You Are</h2>
 
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div>
               <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">
-                Esther did not come to fitness from a place of confidence. There was a time when exercise felt inaccessible, intimidating, and simply not something that was meant for her. When that changed, it changed everything — her health, her mood, her sense of what was possible.
+                I did not come to fitness from a place of confidence. There was a time when exercise felt inaccessible, intimidating, and simply not something that was meant for me. When that changed, it changed everything — my health, my mood, my sense of what was possible.
               </p>
               <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">
-                That experience is the reason she became a personal trainer. Not to help people lose weight or achieve an aesthetic ideal — but to help people feel stronger, more capable, and more at home in their own bodies.
+                That experience is the reason I became a personal trainer. Not to help people lose weight or achieve an aesthetic ideal — but to help people feel stronger, more capable, and more at home in their own bodies.
               </p>
               <p className="text-muted-foreground font-body text-base leading-relaxed mb-8">
-                She qualified to Level 4 — the highest personal training qualification in the UK — specifically to work with people who have more complex needs: exercise referral, cancer rehabilitation, and clients whose situations have led other trainers to say they cannot help. Those are exactly the clients Esther is here for.
+                I qualified to Level 4 — the highest personal training qualification in the UK — specifically to work with people who have more complex needs: exercise referral, cancer rehabilitation, and clients whose situations have led other trainers to say they cannot help. Those are exactly the clients I am here for.
               </p>
               <button
                 onClick={openDialog}
@@ -108,7 +108,7 @@ const About = () => {
               </button>
             </div>
             <img
-              src={coachPatricia}
+              src={estherAbout}
               alt="Esther Fair, personal trainer at Eternal Fitness Worthing"
               loading="lazy"
               className="rounded-2xl w-full h-[460px] object-cover"
@@ -126,7 +126,7 @@ const About = () => {
             </span>
             <h2 className="text-3xl md:text-4xl text-foreground mb-4">Qualified to Help Where Others Cannot</h2>
             <p className="text-muted-foreground font-body text-base max-w-2xl mx-auto">
-              Most personal trainers hold a Level 3 qualification. Esther holds Level 4 — alongside specialist certifications that are rare in any fitness setting.
+              Most personal trainers hold a Level 3 qualification. I hold Level 4 — alongside specialist certifications that are rare in any fitness setting.
             </p>
           </div>
 
@@ -155,17 +155,17 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl text-foreground text-center mb-6">Experience Across the Full Range of Human Complexity</h2>
           <div className="max-w-3xl mx-auto text-center mb-14">
             <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">
-              Over the years, Esther has worked with clients that most personal trainers would not know how to support — people managing serious and complex health conditions, people going through cancer treatment, people with physical disabilities, clients with significant visual impairment, and people whose gender identity or physical goals do not fit neatly into the mainstream fitness mould.
+              Over the years, I have worked with clients that most personal trainers would not know how to support — people managing serious and complex health conditions, people going through cancer treatment, people with physical disabilities, clients with significant visual impairment, and people whose gender identity or physical goals do not fit neatly into the mainstream fitness mould.
             </p>
             <p className="text-muted-foreground font-body text-base leading-relaxed">
-              She mentions this not to boast, but because the person reading this might be wondering whether their situation is too complicated, too unusual, or too much. It almost certainly is not. Every client is treated as an individual, and every programme is built from scratch — with complete respect for whatever their body, health, identity, or history looks like.
+              I mention this not to boast, but because you might be wondering whether your situation is too complicated, too unusual, or too much. It almost certainly is not. I treat every client as an individual, and every programme is built from scratch — with complete respect for whatever your body, health, identity, or history looks like.
             </p>
           </div>
           <div className="flex justify-center">
             <div className="flex items-center gap-3 bg-accent/10 rounded-2xl px-6 py-4 max-w-xl">
               <Users className="w-5 h-5 text-accent shrink-0" />
               <p className="text-foreground font-body text-base leading-relaxed">
-                If you are wondering whether your situation is too complex — please get in touch. The answer is almost always yes, Esther can help.
+                If you are wondering whether your situation is too complex — please get in touch. The answer is almost always yes, I can help.
               </p>
             </div>
           </div>
@@ -185,7 +185,7 @@ const About = () => {
                 Eternal Fitness is not a weight loss service. It is not about transforming your body into something it is not. It is about finding out what your body is capable of — right now, with everything it is currently dealing with — and building steadily from there.
               </p>
               <p className="text-muted-foreground font-body text-base leading-relaxed mb-6">
-                The goal is not a six-week result. It is feeling stronger at sixty than you did at fifty. Being able to pick something up off the floor without pain. Having the energy to do the things you love. Moving through life with more ease and confidence than before. That takes time, consistency, and working with someone who genuinely understands your body and adjusts when things change.
+                The goal is not a six-week result. It is feeling stronger at sixty than you did at fifty. Being able to pick something up off the floor without pain. Having the energy to do the things you love. Moving through life with more ease and confidence than before. That takes time, consistency, and working with someone who genuinely understands your body and adjusts when things change. That is what I do.
               </p>
               <div className="bg-background rounded-2xl p-5 mb-6 border border-border shadow-md">
                 <h4 className="text-foreground mb-2">More Than a Workout</h4>

@@ -64,10 +64,10 @@ const Blog = () => {
         <Navbar onBookConsultation={openDialog} />
         <div className="relative z-10 text-center px-6 pt-20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground mb-4">
-            Our Blogs
+            My Blog
           </h1>
           <p className="text-primary-foreground/70 max-w-xl mx-auto text-base md:text-lg mb-8">
-            Dive into our blog for expert insights, tips, and industry trends to support your health and fitness journey.
+            Dive into my blog for insights, tips, and advice to support your health and fitness journey.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <button
@@ -91,13 +91,13 @@ const Blog = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <span className="inline-block bg-accent/10 text-accent text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
-              Our Blogs
+              My Blog
             </span>
             <h2 className="text-3xl md:text-4xl text-foreground mb-4">
-              Insights and Inspiration, Explore Our Blog
+              Insights and Inspiration from My Blog
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto text-base">
-              Dive into our blog for expert insights, tips, and industry trends to elevate your health and fitness journey.
+              Dive into my blog for insights, tips, and advice to elevate your health and fitness journey.
             </p>
           </div>
 
@@ -168,10 +168,10 @@ const Blog = () => {
                 Featured Blogs
               </span>
               <h2 className="text-3xl md:text-4xl text-foreground mb-4">
-                Dive into Our Top Blogs
+                Dive into My Top Posts
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto text-base">
-                Explore our curated selection of top blogs, offering expert insights and valuable tips.
+                Explore my curated selection of top posts, offering insights and valuable tips.
               </p>
             </div>
 

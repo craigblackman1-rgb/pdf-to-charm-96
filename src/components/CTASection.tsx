@@ -25,7 +25,7 @@ const CTASection = ({ onBookConsultation }: CTASectionProps) => {
               Ready to Find Out If This Is Right for You?
             </h2>
             <p className="text-accent-foreground/80 font-body text-base mb-8 max-w-md">
-              The first conversation is free, there is no commitment, and there is no such thing as the wrong question. Esther works with a small number of clients at any one time — so every person gets her full attention.
+              The first conversation is free, there is no commitment, and there is no such thing as the wrong question. I work with a small number of clients at any one time — so every person gets my full attention.
             </p>
             <div className="flex flex-wrap gap-4">
               {onBookConsultation ? (
@@ -47,7 +47,7 @@ const CTASection = ({ onBookConsultation }: CTASectionProps) => {
                 href="tel:07517658128"
                 className="inline-flex items-center gap-2 border border-accent-foreground/40 text-accent-foreground px-6 py-3 rounded-full font-medium hover:bg-accent-foreground/10 transition-colors"
               >
-                Call Esther <ArrowUpRight className="w-4 h-4" />
+                Give Me a Call <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
           </div>

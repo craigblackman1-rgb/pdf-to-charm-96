@@ -259,12 +259,12 @@ const BlogPost = () => {
                       </h4>
                     </div>
                     <p className="text-muted-foreground text-sm mt-1">
-                      Eternal Fitness Coach
+                      Personal Trainer, Worthing
                     </p>
                   </div>
                 </div>
                 <p className="text-muted-foreground text-base leading-relaxed mb-4">
-                  Passionate about helping people achieve their fitness goals
+                  I am passionate about helping people achieve their fitness goals
                   through personalised training and evidence-based coaching.
                 </p>
                 <div>
@@ -472,7 +472,7 @@ const BlogPost = () => {
           </h2>
           <p className="text-primary-foreground/60 text-base md:text-lg mb-8">
             Want a simple plan based on your body and goals? Book a free
-            consultation and we'll map out a safe return to training approach
+            consultation and I will map out a safe, personalised approach
             that feels good and fits your week.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
@@ -486,7 +486,7 @@ const BlogPost = () => {
               href="tel:07517658128"
               className="inline-flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground px-6 py-3 rounded-full font-medium hover:bg-primary-foreground/10 transition-colors"
             >
-              Speak to Esther <ArrowUpRight className="w-4 h-4" />
+              Give Me a Call <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>
         </div>

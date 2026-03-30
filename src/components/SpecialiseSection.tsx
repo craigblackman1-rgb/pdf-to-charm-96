@@ -22,7 +22,7 @@ const SpecialiseSection = () => {
           <span className="inline-flex items-center gap-2 bg-primary/20 text-primary-foreground px-4 py-1.5 rounded-full text-sm font-medium mb-4">
             ✦ Specialist Areas
           </span>
-          <h2 className="text-3xl md:text-4xl text-accent-foreground mb-3">Who Esther Works With</h2>
+          <h2 className="text-3xl md:text-4xl text-accent-foreground mb-3">Who I Work With</h2>
           <p className="text-accent-foreground/70 font-body text-base max-w-2xl mx-auto">
             Cancer rehabilitation. Chronic health conditions. Disability and adaptive training. Neurological conditions. GP-referred exercise. Injury recovery. Older adults. People who have never felt welcome in a gym. If your situation is not listed — please still get in touch. The answer is almost always yes.
           </p>
