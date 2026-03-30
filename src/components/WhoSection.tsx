@@ -14,7 +14,7 @@ const WhoSection = () => {
             <h2 className="text-3xl md:text-4xl text-accent-foreground">If You Have Been Told Fitness Is Not for You — It Is</h2>
           </div>
           <p className="text-accent-foreground/70 font-body text-base max-w-sm">
-            Esther has worked with clients managing cancer, chronic illness, disability, visual impairment, neurological conditions, and complex mobility issues. She is here for the people other trainers cannot help.
+            I have worked with clients managing cancer, chronic illness, disability, visual impairment, neurological conditions, and complex mobility issues. I am here for the people other trainers cannot help.
           </p>
         </div>
 
@@ -29,7 +29,7 @@ const WhoSection = () => {
                 People managing health conditions, disability, or injury
               </h3>
               <p className="text-muted-foreground font-body text-base mb-4">
-                Cancer rehabilitation. Chronic illness. Neurological conditions. Post-surgical recovery. Extreme mobility limitations. Esther is Level 4 qualified and exercise referral trained — she knows how to work safely and effectively with complex needs.
+                Cancer rehabilitation. Chronic illness. Neurological conditions. Post-surgical recovery. Extreme mobility limitations. I am Level 4 qualified and exercise referral trained — I know how to work safely and effectively with complex needs.
               </p>
               <a href="/personal-training" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:opacity-90 transition-opacity">
                 See Specialist Areas <ArrowUpRight className="w-4 h-4" />

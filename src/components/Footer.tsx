@@ -15,7 +15,7 @@ const Footer = () => {
             Private, one-to-one personal training in Worthing. Level 4 qualified. Exercise referral specialist. Cancer rehabilitation.
           </p>
           <div className="space-y-3">
-            <h4 className="font-body font-semibold text-foreground text-base">Contact Esther</h4>
+            <h4 className="font-body font-semibold text-foreground text-base">Get in Touch</h4>
             <a href="tel:07517658128" className="flex items-center gap-2 text-muted-foreground text-sm hover:text-foreground transition-colors">
               <Phone className="w-4 h-4 text-accent" /> 07517 658 128
             </a>
@@ -39,7 +39,7 @@ const Footer = () => {
         <div>
           <h4 className="font-body font-semibold text-foreground text-base mb-4">Information</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/about" className="hover:text-foreground transition-colors">About Esther</Link></li>
+            <li><Link to="/about" className="hover:text-foreground transition-colors">About Me</Link></li>
             <li><Link to="/pricing" className="hover:text-foreground transition-colors">Pricing</Link></li>
             <li><Link to="/faqs" className="hover:text-foreground transition-colors">FAQs</Link></li>
             <li><Link to="/contact" className="hover:text-foreground transition-colors">Contact</Link></li>
@@ -48,13 +48,13 @@ const Footer = () => {
         </div>
 
         <div>
-          <h4 className="font-body font-semibold text-foreground text-base mb-4">Follow me on Facebook</h4>
+          <h4 className="font-body font-semibold text-foreground text-base mb-4">Follow Me on Facebook</h4>
           <div className="flex gap-3">
             <a
               href="https://www.facebook.com/EternalFitnessPersonalTraining/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Follow Esther on Facebook"
+              aria-label="Follow me on Facebook"
               className="w-8 h-8 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center text-accent hover:bg-accent hover:text-accent-foreground transition-colors"
             >
               <SocialIcon name="facebook" />

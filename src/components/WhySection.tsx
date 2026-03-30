@@ -20,7 +20,7 @@ const WhySection = () => {
             <h2 className="text-3xl md:text-4xl text-foreground">Training That Meets You Where You Are</h2>
           </div>
           <p className="text-muted-foreground font-body text-base max-w-md md:pt-8">
-            Esther is a Level 4 personal trainer and exercise referral specialist. She works with people who have been turned away, overlooked, or simply never felt welcome in conventional fitness environments — because of a health condition, a disability, a complex medical history, or simply because they did not know where to start.
+            I am a Level 4 personal trainer and exercise referral specialist. I work with people who have been turned away, overlooked, or simply never felt welcome in conventional fitness environments — because of a health condition, a disability, a complex medical history, or simply because they did not know where to start.
           </p>
         </div>
 

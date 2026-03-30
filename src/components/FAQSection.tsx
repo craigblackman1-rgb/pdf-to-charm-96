@@ -15,22 +15,22 @@ answer:
   {
     question: "Is this suitable if I have an injury or medical condition?",
     answer:
-      "Absolutely. We work with clients recovering from injuries, managing chronic conditions, and going through cancer rehabilitation. Every programme is tailored to your needs with input from your healthcare team when appropriate.",
+      "Absolutely. I work with clients recovering from injuries, managing chronic conditions, and going through cancer rehabilitation. Every programme is tailored to your needs with input from your healthcare team when appropriate.",
   },
   {
     question: "How often should I train?",
     answer:
-      "For most clients, 2–3 sessions per week delivers excellent results. We'll design a schedule that fits your lifestyle and recovery needs, ensuring sustainable progress without burnout.",
+      "For most clients, 2-3 sessions per week delivers excellent results. I will design a schedule that fits your lifestyle and recovery needs, ensuring sustainable progress without burnout.",
   },
   {
     question: "Do you offer short-term programmes?",
     answer:
-      "Yes. While we recommend committing to at least 12 weeks for meaningful change, we offer flexible packages including 4-week and 8-week options to suit your goals and budget.",
+      "Yes. While I recommend committing to at least 12 weeks for meaningful change, I offer flexible packages including 4-week and 8-week options to suit your goals and budget.",
   },
   {
     question: "Where is the studio located?",
     answer:
-      "Our private, fully equipped studio is located in Worthing, West Sussex. Contact us for the exact address and directions.",
+      "My private, fully equipped studio is located in Worthing, West Sussex. Get in touch and I will share the exact address and directions.",
   },
 ];
 
@@ -47,7 +47,7 @@ const FAQSection = () => {
             Common questions
           </h2>
           <p className="text-muted-foreground font-body text-lg mb-8">
-            If something is holding you back, the answer is probably here. And if it is not — just ask.
+            Here are the questions I get asked most often.
           </p>
           <a
             href="#contact"

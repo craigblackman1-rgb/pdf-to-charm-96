@@ -35,7 +35,7 @@ const Contact = () => {
       toast.error("Please agree to the privacy policy.");
       return;
     }
-    toast.success("Message sent! Esther will be in touch soon.");
+    toast.success("Message sent! I will be in touch soon.");
     setForm({ firstName: "", lastName: "", email: "", phone: "", message: "", agree: false });
   };
 
@@ -80,7 +80,7 @@ const Contact = () => {
               Whether you have a specific question, are not sure where to start, or just want to find out if this is right for you — please get in touch.
             </p>
             <p className="text-muted-foreground font-body text-base mb-8">
-              Esther responds personally to every message, usually within one working day.
+              I respond personally to every message, usually within one working day.
             </p>
 
             <div className="space-y-6 mb-10">
@@ -123,9 +123,9 @@ const Contact = () => {
             </div>
 
             <div className="border-t border-border pt-6">
-              <h4 className="font-body font-semibold text-foreground text-base mb-3">Follow Esther</h4>
+              <h4 className="font-body font-semibold text-foreground text-base mb-3">Follow Me</h4>
               <div className="flex gap-2">
-                <a href="https://www.facebook.com/EternalFitnessPersonalTraining/" target="_blank" rel="noopener noreferrer" aria-label="Follow Esther on Facebook" className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground hover:opacity-80 transition-opacity">
+                <a href="https://www.facebook.com/EternalFitnessPersonalTraining/" target="_blank" rel="noopener noreferrer" aria-label="Follow me on Facebook" className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground hover:opacity-80 transition-opacity">
                   <SocialIcon name="facebook" />
                 </a>
                 <span title="Instagram — coming soon" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-muted-foreground opacity-40 cursor-default">
@@ -145,7 +145,7 @@ const Contact = () => {
           <div>
             <h3 className="font-body font-semibold text-foreground text-lg mb-2">Send a Message</h3>
             <p className="text-muted-foreground font-body text-base mb-6">
-              Fill in the form below and Esther will get back to you personally. There is no such thing as the wrong question.
+              Fill in the form below and I will get back to you personally. There is no such thing as the wrong question.
             </p>
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="grid grid-cols-2 gap-4">
@@ -202,7 +202,7 @@ const Contact = () => {
                   name="message"
                   value={form.message}
                   onChange={handleChange}
-                  placeholder="Tell Esther a little about your situation and what you are hoping to achieve. There are no wrong answers."
+                  placeholder="Tell me a little about your situation and what you are hoping to achieve. There are no wrong answers."
                   maxLength={1000}
                   rows={5}
                   className="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"

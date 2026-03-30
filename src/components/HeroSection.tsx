@@ -22,7 +22,7 @@ const HeroSection = ({ onBookConsultation }: HeroSectionProps) => {
             Fitness That Works for Your Body — Whatever It Is Dealing With
           </h1>
           <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">
-            Private, one-to-one personal training in Worthing for people with health conditions, injuries, mobility challenges, and those who have been told fitness is not for them. No pressure. No judgement.
+            I offer private, one-to-one personal training in Worthing for people with health conditions, injuries, mobility challenges, and those who have been told fitness is not for them. No pressure. No judgement.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button
@@ -50,7 +50,7 @@ const HeroSection = ({ onBookConsultation }: HeroSectionProps) => {
             </div>
             <div>
               <p className="text-primary-foreground font-bold text-xl">Level 4 Qualified</p>
-              <p className="text-primary-foreground/60 text-sm">The highest personal training qualification in the UK — plus exercise referral and cancer rehabilitation.</p>
+              <p className="text-primary-foreground/60 text-sm">The highest personal training qualification in the UK — plus exercise referral and cancer rehabilitation. That is what I bring to every session.</p>
             </div>
           </div>
           <div className="bg-background/10 backdrop-blur-md rounded-2xl p-5 border border-primary-foreground/10 shadow-md">
@@ -61,7 +61,7 @@ const HeroSection = ({ onBookConsultation }: HeroSectionProps) => {
           </div>
           <div className="bg-primary rounded-2xl p-5 flex flex-col justify-center shadow-md">
             <h4 className="text-primary-foreground text-lg mb-1">Free Consultation</h4>
-            <p className="text-primary-foreground/80 text-sm">Every new client starts with a free 30-minute conversation. No commitment, no sales pitch.</p>
+            <p className="text-primary-foreground/80 text-sm">Every new client starts with a free 30-minute conversation with me. No commitment, no sales pitch.</p>
           </div>
         </div>
       </div>

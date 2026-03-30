@@ -23,11 +23,11 @@ const approaches = [
 const bottomCards = [
   {
     title: "Qualified to work with complex needs",
-    desc: "Level 4 personal trainer with specialist qualifications in exercise referral and cancer rehabilitation — rare at any fitness setting.",
+    desc: "I am a Level 4 personal trainer with specialist qualifications in exercise referral and cancer rehabilitation — rare at any fitness setting.",
   },
   {
     title: "No judgement. No agenda.",
-    desc: "No weigh-ins, no before-and-after photos, no expectation of what fitness should look like. Just you, Esther, and a programme built for your body.",
+    desc: "No weigh-ins, no before-and-after photos, no expectation of what fitness should look like. Just you and me, and a programme built for your body.",
   },
 ];
 
@@ -45,7 +45,7 @@ const ApproachSection = () => {
             </h2>
           </div>
           <p className="text-muted-foreground font-body text-base max-w-sm md:pt-8">
-            Esther is trained to adapt to medical conditions, medication effects, fatigue, and variable capacity. She does not guess — she asks, she listens, and she adjusts. Every single session.
+            I am trained to adapt to medical conditions, medication effects, fatigue, and variable capacity. I do not guess — I ask, I listen, and I adjust. Every single session.
           </p>
         </div>
 

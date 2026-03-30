@@ -60,19 +60,19 @@ const valueProps = [
     icon: Heart,
     title: "One person. One trainer. One focus.",
     description:
-      "Every session is entirely about you — your body, your health history, your goals. There are no group classes, no generic programmes, and no one-size-fits-all approach.",
+      "Your health is not a short-term purchase — it is a long-term investment in your energy, confidence, and overall quality of life. Prioritising wellness now pays dividends for years to come.",
   },
   {
     icon: Dumbbell,
     title: "Qualified to work where others cannot",
     description:
-      "Level 4 personal trainer with specialist qualifications in exercise referral and cancer rehabilitation. The price reflects expertise that is genuinely rare in any fitness setting.",
+      "My pricing reflects personalised coaching focused on real, sustainable change — not quick fixes. You are paying for private sessions, tailored programmes, and expert guidance designed around your goals.",
   },
   {
     icon: Target,
     title: "The first conversation is always free",
     description:
-      "Every new client starts with a free 30-minute consultation. No commitment, no pressure. Esther will recommend which option makes sense for your situation — not the most expensive one.",
+      "Most importantly, you are investing in a process that develops strength, consistency, and lasting habits. After your consultation, I will recommend the right level of support to help you progress safely and effectively.",
   },
 ];
 
@@ -92,7 +92,7 @@ const Pricing = () => {
             Straightforward pricing. No contracts. No surprises.
           </h1>
           <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">
-            Every client starts with a free consultation. From there, choose the level of commitment that suits your situation — and change it as your needs change.
+            My pricing reflects premium 1:1 support, tailored programming, and accountability that helps you build long-term results. I start with a free consultation so you only invest in what you actually need.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button

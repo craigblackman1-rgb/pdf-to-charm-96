@@ -15,7 +15,7 @@ const sessionImages = [specialise2, specialise1];
 const specialistAreas = [
   {
     title: "Cancer & cancer rehabilitation",
-    desc: "During active treatment, in remission, or post-surgery. Esther is qualified in cancer rehabilitation and adapts to wherever you are in your journey.",
+    desc: "During active treatment, in remission, or post-surgery. I am qualified in cancer rehabilitation and adapt to wherever you are in your journey.",
   },
   {
     title: "Chronic health conditions",
@@ -27,11 +27,11 @@ const specialistAreas = [
   },
   {
     title: "GP-referred exercise",
-    desc: "Esther is qualified in exercise referral and experienced in working alongside medical guidance from GPs and healthcare teams.",
+    desc: "I am qualified in exercise referral and experienced in working alongside medical guidance from GPs and healthcare teams.",
   },
   {
     title: "Injury recovery & rehabilitation",
-    desc: "Post-surgical, post-fracture, and musculoskeletal conditions. Esther works within the guidance of your physiotherapist or consultant.",
+    desc: "Post-surgical, post-fracture, and musculoskeletal conditions. I work within the guidance of your physiotherapist or consultant.",
   },
   {
     title: "Neurological conditions",
@@ -62,12 +62,12 @@ const steps = [
   {
     icon: ClipboardList,
     title: "Free Consultation",
-    desc: "A relaxed 30-minute conversation about your goals, health history, and what has and has not worked before. No pressure, no commitment.",
+    desc: "A relaxed 30-minute conversation with me about your goals, health history, and what has and has not worked before. No pressure, no commitment.",
   },
   {
     icon: Search,
     title: "Movement Assessment",
-    desc: "Esther checks your current mobility, strength, and any limitations before any programme begins — so training starts safely and clearly.",
+    desc: "I check your current mobility, strength, and any limitations before any programme begins — so training starts safely and clearly.",
   },
   {
     icon: BarChart3,
@@ -77,7 +77,7 @@ const steps = [
   {
     icon: HeartHandshake,
     title: "Ongoing Support",
-    desc: "Esther adjusts your programme as your health and capacity change — keeping training sustainable, realistic, and aligned with where you are.",
+    desc: "I adjust your programme as your health and capacity change — keeping training sustainable, realistic, and aligned with where you are.",
   },
 ];
 
@@ -131,7 +131,7 @@ const PersonalTraining = () => {
                 </p>
               </div>
               <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
-                Esther's background in exercise referral and cancer rehabilitation means she is trained to adapt to medical conditions, medication effects, fatigue, and variable capacity. She does not guess — she asks, she listens, and she adjusts.
+                My background in exercise referral and cancer rehabilitation means I am trained to adapt to medical conditions, medication effects, fatigue, and variable capacity. I do not guess — I ask, I listen, and I adjust.
               </p>
               <button
                 onClick={openDialog}
@@ -155,9 +155,9 @@ const PersonalTraining = () => {
             <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium mb-4">
               ✦ Specialist Areas
             </span>
-            <h2 className="text-3xl md:text-4xl text-foreground mb-4">Who Esther Works With</h2>
+            <h2 className="text-3xl md:text-4xl text-foreground mb-4">Who I Work With</h2>
             <p className="text-muted-foreground font-body text-base max-w-2xl mx-auto">
-              Esther specialises in working with people who have been underserved by mainstream fitness. If your situation is not listed here, please still get in touch — the answer is almost always yes.
+              I specialise in working with people who have been underserved by mainstream fitness. If your situation is not listed here, please still get in touch — the answer is almost always yes.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -177,7 +177,7 @@ const PersonalTraining = () => {
           <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
             <div>
               <span className="inline-flex items-center gap-2 bg-primary/20 text-primary-foreground px-4 py-1.5 rounded-full text-sm font-medium mb-4">
-                ✦ What We Work On
+                ✦ What I Work On
               </span>
               <h2 className="text-3xl md:text-4xl text-primary-foreground leading-tight mb-4">
                 Strength and Capability for Real Life
