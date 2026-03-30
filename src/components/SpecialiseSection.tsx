@@ -1,24 +1,12 @@
 import s1 from "@/assets/specialise-1.jpg";
 import s2 from "@/assets/specialise-2.jpg";
 import s3 from "@/assets/specialise-3.jpg";
-import heroImg from "@/assets/hero-gym.jpg";
-import mobilityImg from "@/assets/mobility-movement.jpg";
-import studioImg from "@/assets/studio-2.jpg";
-
-const images = [
-  { src: s1, label: "Cancer Rehabilitation", desc: "Specialist support during treatment, in remission, and post-surgery.", span: "col-span-2 row-span-2" },
-  { src: s2, label: null, desc: null, span: "" },
-  { src: s3, label: null, desc: null, span: "" },
-  { src: heroImg, label: null, desc: null, span: "" },
-  { src: studioImg, label: null, desc: null, span: "" },
-  { src: mobilityImg, label: null, desc: null, span: "col-span-2" },
-];
 
 const SpecialiseSection = () => {
   return (
     <section className="py-20 md:py-28 bg-accent">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <span className="inline-flex items-center gap-2 bg-primary/20 text-primary-foreground px-4 py-1.5 rounded-full text-sm font-medium mb-4">
             ✦ Specialist Areas
           </span>
@@ -28,24 +16,24 @@ const SpecialiseSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[180px]">
-          {images.map((img, i) => (
-            <div key={i} className={`relative rounded-xl overflow-hidden group shadow-md ${img.span}`}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+          {[
+            { src: s1, label: "Cancer Rehabilitation", desc: "Specialist support during treatment, in remission, and post-surgery.", offset: "md:mt-0" },
+            { src: s2, label: "Adaptive Training", desc: "Inclusive programmes tailored to your abilities and goals.", offset: "md:mt-10" },
+            { src: s3, label: "Injury Recovery", desc: "Safe, structured return to movement after injury or surgery.", offset: "md:mt-4" },
+          ].map((img, i) => (
+            <div key={i} className={`relative rounded-xl overflow-hidden group shadow-lg aspect-[3/4] ${img.offset}`}>
               <img
                 src={img.src}
-                alt={img.label || "Personal training Worthing"}
+                alt={img.label}
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              {img.label && (
-                <>
-                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-4">
-                    <h4 className="text-primary-foreground text-base">{img.label}</h4>
-                    <p className="text-primary-foreground/70 text-sm mt-1">{img.desc}</p>
-                  </div>
-                </>
-              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5">
+                <h4 className="text-primary-foreground text-lg font-semibold">{img.label}</h4>
+                <p className="text-primary-foreground/80 text-sm mt-1">{img.desc}</p>
+              </div>
             </div>
           ))}
         </div>

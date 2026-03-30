@@ -10,11 +10,14 @@ import aboutPhilosophy from "@/assets/about-philosophy.jpg";
 import estherAbout from "@/assets/esther-about.jpg";
 import studio1 from "@/assets/studio-1.jpg";
 import studio2 from "@/assets/studio-2.jpg";
+import approachConsistency from "@/assets/approach-consistency.jpg";
+import mobilityImg from "@/assets/mobility-movement.jpg";
+import mindBodyImg from "@/assets/mind-body.jpg";
 
 const qualifications = [
   {
     title: "Level 4 Personal Trainer",
-    desc: "The highest level of personal training qualification in the UK. Registered with [REPs / CIMSPA].",
+    desc: "The highest level of personal training qualification in the UK — above the Level 3 held by most personal trainers. Registered with a recognised UK fitness body.",
     icon: Award,
   },
   {
@@ -33,14 +36,17 @@ const longTermCards = [
   {
     title: "The Power of Consistency",
     desc: "Small, steady actions repeated over time create lasting physical and mental change — without extremes.",
+    image: approachConsistency,
   },
   {
     title: "Adapting When Things Change",
     desc: "Life and health are unpredictable. Your programme adapts with you, so progress never stops — it just looks different.",
+    image: mobilityImg,
   },
   {
     title: "Real Outcomes, Not Aesthetics",
     desc: "Stronger, more capable, more comfortable in your body. These are the results that actually matter.",
+    image: mindBodyImg,
   },
 ];
 
@@ -254,8 +260,10 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {longTermCards.map((card) => (
-              <div key={card.title} className="border border-border rounded-2xl overflow-hidden shadow-md">
-                <div className="h-48 bg-muted" />
+              <div key={card.title} className="border border-border rounded-2xl overflow-hidden">
+                <div className="h-48 overflow-hidden">
+                  <img src={card.image} alt={card.title} loading="lazy" className="w-full h-full object-cover" />
+                </div>
                 <div className="p-5">
                   <h4 className="text-foreground text-lg mb-2">{card.title}</h4>
                   <p className="text-muted-foreground font-body text-base">{card.desc}</p>

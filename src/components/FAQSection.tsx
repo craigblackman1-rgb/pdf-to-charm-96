@@ -7,11 +7,11 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-  {
-    question: "Do I need to be fit to start?",
-    answer:
-      "Whether it's running, weightlifting, or yoga, every \"expert\" you see once had a Day 1 where they felt out of breath, clumsy, or weak. The gym (or the track, or the mat) is a laboratory for improvement, not a showroom for finished products.",
-  },
+{
+question: "Do I need to be fit to start?",
+answer:
+"No. Most of Esther's clients start from a point where conventional fitness feels inaccessible or has previously let them down. You do not need to have exercised before, you do not need to be at a particular weight, and you do not need to be healthy in the conventional sense. The only starting point is where you are right now.",
+},
   {
     question: "Is this suitable if I have an injury or medical condition?",
     answer:
@@ -41,10 +41,10 @@ const FAQSection = () => {
         {/* Left */}
         <div>
           <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-medium mb-6">
-            ✦ Specialise
+            ✦ Questions
           </span>
-          <h2 className="font-display text-3xl md:text-4xl text-foreground leading-tight mb-4">
-            Frequently asked question
+          <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-4">
+            Common questions
           </h2>
           <p className="text-muted-foreground font-body text-lg mb-8">
             Here are the questions I get asked most often.
