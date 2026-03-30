@@ -2,6 +2,30 @@ import s1 from "@/assets/specialise-1.jpg";
 import s2 from "@/assets/specialise-2.jpg";
 import s3 from "@/assets/specialise-3.jpg";
 
+const specialisms = [
+  {
+    src: s1,
+    label: "Cancer Rehabilitation",
+    desc: "Specialist support during treatment, in remission, and post-surgery.",
+    alt: "Cancer rehabilitation personal training Worthing",
+    offset: "md:mt-0",
+  },
+  {
+    src: s2,
+    label: "Adaptive Training",
+    desc: "Inclusive programmes tailored to your abilities and goals.",
+    alt: "Adaptive personal training for disability Worthing",
+    offset: "md:mt-10",
+  },
+  {
+    src: s3,
+    label: "Injury Recovery",
+    desc: "Safe, structured return to movement after injury or surgery.",
+    alt: "Injury recovery and rehabilitation personal training Worthing",
+    offset: "md:mt-4",
+  },
+];
+
 const SpecialiseSection = () => {
   return (
     <section className="py-20 md:py-28 bg-accent">
@@ -17,22 +41,20 @@ const SpecialiseSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-          {[
-            { src: s1, label: "Cancer Rehabilitation", desc: "Specialist support during treatment, in remission, and post-surgery.", offset: "md:mt-0" },
-            { src: s2, label: "Adaptive Training", desc: "Inclusive programmes tailored to your abilities and goals.", offset: "md:mt-10" },
-            { src: s3, label: "Injury Recovery", desc: "Safe, structured return to movement after injury or surgery.", offset: "md:mt-4" },
-          ].map((img, i) => (
-            <div key={i} className={`relative rounded-xl overflow-hidden group shadow-lg aspect-[3/4] ${img.offset}`}>
+          {specialisms.map((item) => (
+            <div key={item.label} className={`relative rounded-xl overflow-hidden group shadow-lg aspect-[3/4] ${item.offset}`}>
               <img
-                src={img.src}
-                alt={img.label}
+                src={item.src}
+                alt={item.alt}
                 loading="lazy"
+                width={400}
+                height={533}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-5">
-                <h4 className="text-primary-foreground text-lg font-semibold">{img.label}</h4>
-                <p className="text-primary-foreground/80 text-sm mt-1">{img.desc}</p>
+                <h3 className="text-primary-foreground text-lg font-semibold">{item.label}</h3>
+                <p className="text-primary-foreground/80 text-sm mt-1">{item.desc}</p>
               </div>
             </div>
           ))}

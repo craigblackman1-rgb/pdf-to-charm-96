@@ -3,9 +3,21 @@ import strengthImg from "@/assets/strength-tasks.jpg";
 import mindBodyImg from "@/assets/mind-body.jpg";
 
 const cards = [
-  { title: "Specialist in complex health conditions", image: mobilityImg },
-  { title: "Strength and mobility for real life", image: strengthImg },
-  { title: "Calm, private, one-to-one training", image: mindBodyImg },
+  {
+    title: "Specialist in complex health conditions",
+    image: mobilityImg,
+    alt: "Personal training for complex health conditions in Worthing",
+  },
+  {
+    title: "Strength and mobility for real life",
+    image: strengthImg,
+    alt: "Strength and mobility personal training in Worthing",
+  },
+  {
+    title: "Calm, private, one-to-one training",
+    image: mindBodyImg,
+    alt: "Private one-to-one personal training studio Worthing",
+  },
 ];
 
 const WhySection = () => {
@@ -20,7 +32,7 @@ const WhySection = () => {
             <h2 className="text-3xl md:text-4xl text-foreground">Training That Meets You Where You Are</h2>
           </div>
           <p className="text-muted-foreground font-body text-base max-w-md md:pt-8">
-            I am a Level 4 personal trainer and exercise referral specialist. I work with people who have been turned away, overlooked, or simply never felt welcome in conventional fitness environments — because of a health condition, a disability, a complex medical history, or simply because they did not know where to start.
+            Esther Fair is a Level 4 personal trainer and exercise referral specialist based in Worthing. She works with people who have been turned away, overlooked, or never felt welcome in conventional fitness — because of a health condition, disability, complex medical history, or simply not knowing where to start.
           </p>
         </div>
 
@@ -29,8 +41,10 @@ const WhySection = () => {
             <div key={card.title} className="relative rounded-2xl overflow-hidden aspect-[4/5] group shadow-md">
               <img
                 src={card.image}
-                alt={card.title}
+                alt={card.alt}
                 loading="lazy"
+                width={480}
+                height={600}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 to-transparent" />

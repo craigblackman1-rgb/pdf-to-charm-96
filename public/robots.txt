@@ -1,14 +1,9 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+# Block internal/utility routes
+Disallow: /terms
+Disallow: /cookies-policy
+Disallow: /privacy-policy
+
+Sitemap: https://eternalfitness.co.uk/sitemap.xml

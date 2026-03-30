@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SEO from "@/components/SEO";
 import { useQuery } from "@tanstack/react-query";
 import { Search, ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -55,6 +56,11 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Fitness & Health Blog — Eternal Fitness Worthing"
+        description="Practical articles on training with health conditions, cancer rehabilitation, adaptive fitness, and moving well at any ability level. Written by Level 4 personal trainer Esther Fair."
+        canonical="/blog"
+      />
       <ConsultationDialog open={open} onOpenChange={setOpen} />
 
       {/* Hero */}

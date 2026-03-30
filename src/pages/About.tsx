@@ -1,6 +1,28 @@
 import { ArrowUpRight, Award, HeartHandshake, Users } from "lucide-react";
 import SEO from "@/components/SEO";
 import Navbar from "@/components/Navbar";
+
+const aboutSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Esther Fair",
+    "jobTitle": "Level 4 Personal Trainer",
+    "description": "Level 4 personal trainer, exercise referral specialist, and cancer rehabilitation qualified. Based in a private studio in Worthing, West Sussex.",
+    "url": "https://eternalfitness.co.uk/about",
+    "worksFor": {
+      "@type": "LocalBusiness",
+      "name": "Eternal Fitness",
+      "@id": "https://eternalfitness.co.uk/#business"
+    },
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "name": "Level 4 Personal Trainer" },
+      { "@type": "EducationalOccupationalCredential", "name": "Exercise Referral Specialist" },
+      { "@type": "EducationalOccupationalCredential", "name": "Cancer Rehabilitation Specialist" }
+    ]
+  }
+};
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import ConsultationDialog from "@/components/ConsultationDialog";
@@ -58,8 +80,9 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="About Esther Fair — Level 4 Personal Trainer in Worthing"
-        description="Meet Esther Fair, Level 4 personal trainer, exercise referral specialist and cancer rehabilitation qualified. Training from a private studio in Worthing, West Sussex."
+        description="Meet Esther Fair: Level 4 personal trainer, exercise referral specialist and cancer rehabilitation qualified. Private studio in Worthing, West Sussex. Specialist support for complex needs."
         canonical="/about"
+        schema={aboutSchema}
       />
       <Navbar onBookConsultation={openDialog} />
 

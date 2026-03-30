@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import SEO from "@/components/SEO";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroImg from "@/assets/hero-gym.jpg";
@@ -37,6 +38,12 @@ const TermsCondition = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Terms & Conditions — Eternal Fitness"
+        description="Terms and conditions for Eternal Fitness personal training services in Worthing. Bookings, cancellations, payments and studio rules."
+        canonical="/terms"
+        noIndex
+      />
       <Navbar />
 
       {/* Hero */}

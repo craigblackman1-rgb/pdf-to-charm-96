@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { ArrowUpRight } from "lucide-react";
+import SEO from "@/components/SEO";
 import SocialIcon from "@/components/SocialIcons";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -139,8 +140,59 @@ const BlogPost = () => {
     );
   }
 
+  const articleSchema = post
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.excerpt || "",
+        "image": post.image_url || `https://eternalfitness.co.uk/og-image.jpg`,
+        "datePublished": post.published_at,
+        "dateModified": post.published_at,
+        "author": {
+          "@type": "Person",
+          "name": post.author_name,
+          "url": "https://eternalfitness.co.uk/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Eternal Fitness",
+          "url": "https://eternalfitness.co.uk",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://eternalfitness.co.uk/og-image.jpg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://eternalfitness.co.uk/blog/${post.slug}`
+        },
+        "articleSection": post.category,
+        "keywords": `${post.category}, personal training Worthing, fitness, health`
+      }
+    : null;
+
   return (
     <div className="min-h-screen bg-background">
+      {post && (
+        <SEO
+          title={post.title}
+          description={post.excerpt || `Read ${post.title} on the Eternal Fitness blog. Personal training insights from Level 4 trainer Esther Fair in Worthing.`}
+          canonical={`/blog/${post.slug}`}
+          ogImage={post.image_url || undefined}
+          ogType="article"
+          publishedAt={post.published_at}
+          author={post.author_name}
+          schema={articleSchema || undefined}
+        />
+      )}
+      {!post && !isLoading && (
+        <SEO
+          title="Post Not Found — Eternal Fitness Blog"
+          description="This blog post could not be found. Browse all articles on the Eternal Fitness blog."
+          noIndex
+        />
+      )}
       <ConsultationDialog open={open} onOpenChange={setOpen} />
 
       {/* Hero */}

@@ -1,4 +1,5 @@
-import { ChevronDown, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
@@ -7,30 +8,30 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-{
-question: "Do I need to be fit to start?",
-answer:
-"No. Most of Esther's clients start from a point where conventional fitness feels inaccessible or has previously let them down. You do not need to have exercised before, you do not need to be at a particular weight, and you do not need to be healthy in the conventional sense. The only starting point is where you are right now.",
-},
+  {
+    question: "Do I need to be fit or healthy to start?",
+    answer:
+      "No. Most clients start from a point where conventional fitness feels inaccessible. You do not need to have exercised before, be at a particular weight, or be healthy in the conventional sense. The only starting point is where you are right now.",
+  },
   {
     question: "Is this suitable if I have an injury or medical condition?",
     answer:
-      "Absolutely. I work with clients recovering from injuries, managing chronic conditions, and going through cancer rehabilitation. Every programme is tailored to your needs with input from your healthcare team when appropriate.",
+      "Almost certainly yes. Esther is qualified in exercise referral and cancer rehabilitation, specifically trained to work with people who have clinical health conditions. Every programme is adapted to what your body can manage and adjusted as your health changes.",
   },
   {
     question: "How often should I train?",
     answer:
-      "For most clients, 2-3 sessions per week delivers excellent results. I will design a schedule that fits your lifestyle and recovery needs, ensuring sustainable progress without burnout.",
+      "For most clients, two sessions per week is a good starting point. For those managing health conditions or recovering from illness, one session per week may be more appropriate initially. Esther will recommend a frequency that is sustainable and effective for your specific situation.",
   },
   {
-    question: "Do you offer short-term programmes?",
+    question: "Do you offer flexible packages?",
     answer:
-      "Yes. While I recommend committing to at least 12 weeks for meaningful change, I offer flexible packages including 4-week and 8-week options to suit your goals and budget.",
+      "Yes. Options include a single pay-as-you-go session at 45, a block of 12 for 480, or a block of 24 for 840. Every new client starts with a free 30-minute consultation — no commitment required.",
   },
   {
     question: "Where is the studio located?",
     answer:
-      "My private, fully equipped studio is located in Worthing, West Sussex. Get in touch and I will share the exact address and directions.",
+      "Sessions take place in a private studio in Worthing, West Sussex — used exclusively for one-to-one training. No public gym floor, no other clients. The full address is confirmed at the point of booking.",
   },
 ];
 
@@ -47,14 +48,22 @@ const FAQSection = () => {
             Common questions
           </h2>
           <p className="text-muted-foreground font-body text-lg mb-8">
-            Here are the questions I get asked most often.
+            Here are the questions I get asked most often. For the full list, visit the FAQs page.
           </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
-          >
-            Book Now <ArrowUpRight className="w-4 h-4" />
-          </a>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              to="/faqs"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
+            >
+              All FAQs <ArrowUpRight className="w-4 h-4" />
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3 rounded-full font-medium hover:bg-muted transition-colors"
+            >
+              Ask a Question
+            </Link>
+          </div>
         </div>
 
         {/* Right */}

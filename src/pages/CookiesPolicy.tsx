@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import SEO from "@/components/SEO";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import heroImg from "@/assets/hero-gym.jpg";
@@ -37,6 +38,12 @@ const CookiesPolicy = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Cookie Policy — Eternal Fitness"
+        description="Cookie Policy for Eternal Fitness. How we use cookies on the Eternal Fitness website and how to control them."
+        canonical="/cookies-policy"
+        noIndex
+      />
       <Navbar />
 
       {/* Hero */}
