@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import WhySection from "@/components/WhySection";
@@ -15,6 +16,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Eternal Fitness | Level 4 Personal Trainer in Worthing"
+        description="Specialist one-to-one personal training in Worthing with Level 4 qualified trainer Esther Fair. Expert support for health conditions, cancer rehabilitation, disability and complex needs. Book a free consultation."
+        canonical="/"
+      />
       <Navbar onBookConsultation={openDialog} />
       <HeroSection onBookConsultation={openDialog} />
       <WhySection />

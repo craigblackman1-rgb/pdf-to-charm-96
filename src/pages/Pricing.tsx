@@ -1,4 +1,5 @@
 import { ArrowUpRight, Check, Heart, Dumbbell, Target } from "lucide-react";
+import SEO from "@/components/SEO";
 import Navbar from "@/components/Navbar";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
@@ -81,6 +82,11 @@ const Pricing = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Personal Training Pricing in Worthing — No Contracts, No Surprises"
+        description="Transparent personal training pricing in Worthing. Single sessions from £45, or save with blocks of 12 or 24. All sessions are private, one-to-one, and 60 minutes. Free consultation included."
+        canonical="/pricing"
+      />
       <Navbar onBookConsultation={openDialog} />
 
       {/* Hero */}

@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import SEO from "@/components/SEO";
 import {
   Accordion,
   AccordionContent,
@@ -125,6 +126,11 @@ const FAQs = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="FAQs — Personal Training in Worthing for Health Conditions and Complex Needs"
+        description="Answers to common questions about personal training at Eternal Fitness in Worthing. Health conditions, cancer rehab, disability, pricing, and what to expect from your first session."
+        canonical="/faqs"
+      />
       <Navbar onBookConsultation={openDialog} />
 
       {/* Hero */}

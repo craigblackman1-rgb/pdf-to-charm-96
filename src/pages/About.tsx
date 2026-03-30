@@ -1,4 +1,5 @@
 import { ArrowUpRight, Award, HeartHandshake, Users } from "lucide-react";
+import SEO from "@/components/SEO";
 import Navbar from "@/components/Navbar";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -55,6 +56,11 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="About Esther Fair — Level 4 Personal Trainer in Worthing"
+        description="Meet Esther Fair, Level 4 personal trainer, exercise referral specialist and cancer rehabilitation qualified. Training from a private studio in Worthing, West Sussex."
+        canonical="/about"
+      />
       <Navbar onBookConsultation={openDialog} />
 
       {/* Hero */}

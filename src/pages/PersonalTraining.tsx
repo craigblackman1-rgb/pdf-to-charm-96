@@ -1,4 +1,5 @@
 import { ArrowUpRight, ChevronLeft, ChevronRight, ClipboardList, Search, BarChart3, HeartHandshake } from "lucide-react";
+import SEO from "@/components/SEO";
 import Navbar from "@/components/Navbar";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -86,6 +87,11 @@ const PersonalTraining = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Personal Training in Worthing for Health Conditions and Complex Needs"
+        description="One-to-one personal training in Worthing with a Level 4 specialist. Private sessions adapted for health conditions, cancer rehabilitation, disability, injury recovery and GP referrals."
+        canonical="/personal-training"
+      />
       <Navbar onBookConsultation={openDialog} />
 
       {/* Hero */}
