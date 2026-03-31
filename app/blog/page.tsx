@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+import { supabase } from "@/lib/supabase";
+import BlogPageClient from "./BlogPageClient";
+
+export const metadata: Metadata = {
+  title: "Fitness & Health Blog — Eternal Fitness Worthing",
+  description: "Practical articles on training with health conditions, cancer rehabilitation, adaptive fitness, and moving well at any ability level. Written by Level 4 personal trainer Esther Fair.",
+  alternates: { canonical: "https://eternalfitness.co.uk/blog" },
+};
+
+export default async function BlogPage() {
+  const { data: posts } = await supabase
+    .from("blog_posts")
+    .select("*")
+    .order("published_at", { ascending: false });
+
+  return <BlogPageClient posts={posts ?? []} />;
+}
