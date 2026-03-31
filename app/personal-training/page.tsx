@@ -1,0 +1,38 @@
+import type { Metadata } from "next";
+import PersonalTrainingClient from "./PersonalTrainingClient";
+
+const ptSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://eternalfitness.co.uk/personal-training/#service",
+  "name": "Personal Training in Worthing",
+  "description": "One-to-one personal training in Worthing for people with health conditions, cancer rehabilitation needs, disabilities, injuries, and complex needs. Level 4 qualified trainer.",
+  "url": "https://eternalfitness.co.uk/personal-training",
+  "provider": { "@type": "LocalBusiness", "name": "Eternal Fitness", "@id": "https://eternalfitness.co.uk/#business" },
+  "areaServed": { "@type": "City", "name": "Worthing" },
+  "serviceType": "Personal Training",
+  "audience": { "@type": "Audience", "audienceType": "People with health conditions, disabilities, injuries, and complex needs seeking personal training" },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog", "name": "Personal Training Sessions",
+    "itemListElement": [
+      { "@type": "Offer", "name": "Single Session", "price": "45", "priceCurrency": "GBP" },
+      { "@type": "Offer", "name": "Block of 12", "price": "480", "priceCurrency": "GBP" },
+      { "@type": "Offer", "name": "Block of 24", "price": "840", "priceCurrency": "GBP" }
+    ]
+  }
+};
+
+export const metadata: Metadata = {
+  title: "Personal Training in Worthing for Health Conditions and Complex Needs",
+  description: "One-to-one personal training in Worthing with a Level 4 specialist. Private sessions adapted for health conditions, cancer rehabilitation, disability, injury recovery and GP referrals.",
+  alternates: { canonical: "https://eternalfitness.co.uk/personal-training" },
+};
+
+export default function PersonalTrainingPage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ptSchema) }} />
+      <PersonalTrainingClient />
+    </>
+  );
+}
