@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 import BlogPostClient from "./BlogPostClient";
 
+export const dynamic = "force-dynamic";
+
 interface BlogPostData {
   id: string;
   title: string;

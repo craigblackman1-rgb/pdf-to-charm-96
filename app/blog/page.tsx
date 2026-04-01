@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { supabase } from "@/lib/supabase";
 import BlogPageClient from "./BlogPageClient";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Fitness & Health Blog — Eternal Fitness Worthing",
   description: "Practical articles on training with health conditions, cancer rehabilitation, adaptive fitness, and moving well at any ability level. Written by Level 4 personal trainer Esther Fair.",
