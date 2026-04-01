@@ -42,25 +42,24 @@ export default function BlogPostClient({ post, recentPosts, featuredPost, popula
 
   const tocItems = useMemo(() => {
     if (!post.content) return [];
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(post.content, "text/html");
-    const headings = doc.querySelectorAll("h2, h3");
-    return Array.from(headings).map((h, i) => ({
-      id: `heading-${i}`,
-      text: h.textContent || "",
-      level: h.tagName.toLowerCase(),
-    }));
+    const items: { id: string; text: string; level: string }[] = [];
+    const regex = /<(h[23])[^>]*>([\s\S]*?)<\/\1>/gi;
+    let match;
+    let i = 0;
+    while ((match = regex.exec(post.content)) !== null) {
+      const text = match[2].replace(/<[^>]*>/g, "").trim();
+      items.push({ id: `heading-${i}`, text, level: match[1].toLowerCase() });
+      i++;
+    }
+    return items;
   }, [post.content]);
 
   const processedContent = useMemo(() => {
     if (!post.content) return "";
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(post.content, "text/html");
-    const headings = doc.querySelectorAll("h2, h3");
-    headings.forEach((h, i) => {
-      h.id = `heading-${i}`;
+    let i = 0;
+    return post.content.replace(/<(h[23])([^>]*)>/gi, (_match, tag, attrs) => {
+      return `<${tag}${attrs} id="heading-${i++}">`;
     });
-    return doc.body.innerHTML;
   }, [post.content]);
 
   const formatDate = (dateStr: string) =>
