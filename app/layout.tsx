@@ -26,6 +26,10 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
+  robots: {
+    index: false,
+    follow: false,
+  },
   other: {
     "geo.region": "GB-WSX",
     "geo.placename": "Worthing, West Sussex",
