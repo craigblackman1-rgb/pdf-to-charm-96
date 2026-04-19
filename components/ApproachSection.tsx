@@ -6,8 +6,8 @@ const approaches = [
   },
   {
     image: "/images/approach-flexible.jpg",
-    title: "Adapts when your health changes",
-    subtitle: "If your condition changes, your programme changes with it. You never fall behind.",
+    title: "Adapts when your medical situation changes",
+    subtitle: "Fatigue flares. Conditions fluctuate. Side effects vary. Your programme adjusts with your body — always.",
   },
   {
     image: "/images/approach-consistency.jpg",
@@ -18,8 +18,8 @@ const approaches = [
 
 const bottomCards = [
   {
-    title: "Qualified to work with complex needs",
-    desc: "I am a Level 4 personal trainer with specialist qualifications in exercise referral and cancer rehabilitation — rare at any fitness setting.",
+    title: "Qualified in cancer rehabilitation and clinical exercise",
+    desc: "Level 4 Personal Trainer, Exercise Referral Specialist, Cancer Rehabilitation Specialist. Trained to work with GP-referred clients, chronic conditions, post-treatment recovery, and complex medical needs — rare qualifications in any fitness setting.",
   },
   {
     title: "No judgement. No agenda.",
@@ -41,7 +41,7 @@ const ApproachSection = () => {
             </h2>
           </div>
           <p className="text-muted-foreground font-body text-base max-w-sm md:pt-8">
-            I am trained to adapt to medical conditions, medication effects, fatigue, and variable capacity. I do not guess — I ask, I listen, and I adjust. Every single session.
+            I am a Cancer Rehabilitation Specialist and Exercise Referral Specialist trained to adapt to medical conditions, medication side-effects, fatigue variability, and changing capacity. I work alongside your GP, specialist, or physiotherapist — not against them. Every session is tailored to your body on that day.
           </p>
         </div>
 

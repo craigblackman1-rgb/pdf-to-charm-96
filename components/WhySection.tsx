@@ -28,7 +28,7 @@ const WhySection = () => {
             <h2 className="text-3xl md:text-4xl text-foreground">Training That Meets You Where You Are</h2>
           </div>
           <p className="text-muted-foreground font-body text-base max-w-md md:pt-8">
-            Esther Fair is a Level 4 personal trainer and exercise referral specialist based in Worthing. She works with people who have been turned away, overlooked, or never felt welcome in conventional fitness — because of a health condition, disability, complex medical history, or simply not knowing where to start.
+            Esther Fair is a Level 4 personal trainer, Exercise Referral Specialist, and Cancer Rehabilitation Specialist based in Worthing. She specialises in rehabilitation and recovery training for cancer treatment survivors, chronic health conditions, post-surgery recovery, disabilities, and anyone with complex medical needs who has been overlooked by mainstream fitness.
           </p>
         </div>
 

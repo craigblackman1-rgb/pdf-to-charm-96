@@ -59,7 +59,7 @@ const personSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Eternal Fitness | Level 4 Personal Trainer in Worthing",
+  title: "Level 4 Personal Trainer for Health Conditions in Worthing",
   description: "Private one-to-one personal training in Worthing with Level 4 qualified trainer Esther Fair. Specialist support for health conditions, cancer rehabilitation, disability and complex needs. Book a free consultation.",
   alternates: { canonical: "https://eternalfitness.co.uk/" },
 };

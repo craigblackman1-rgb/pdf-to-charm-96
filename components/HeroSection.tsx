@@ -20,10 +20,10 @@ const HeroSection = ({ onBookConsultation }: HeroSectionProps) => {
       <div className="relative z-10 flex-1 flex items-center justify-center text-center px-6 pt-24">
         <div className="max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-5">
-            Fitness That Works for Your Body — Whatever It Is Dealing With
+            Rehabilitation and Recovery Training in Worthing for Complex Health Needs
           </h1>
           <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">
-            I offer private, one-to-one personal training in Worthing for people with health conditions, injuries, mobility challenges, and those who have been told fitness is not for them. No pressure. No judgement.
+            Specialist one-to-one training for cancer rehabilitation, chronic health conditions, post-surgery recovery, mobility limitations, disabilities, and anyone with complex medical needs who has been overlooked by mainstream fitness. Level 4 qualified. GP-referred clients welcome.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button

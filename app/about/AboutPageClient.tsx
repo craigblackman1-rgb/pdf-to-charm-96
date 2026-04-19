@@ -31,8 +31,8 @@ export default function AboutPageClient() {
         <img src="/images/about-hero.jpg" alt="Esther Fair, Level 4 personal trainer in Worthing" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-hero-overlay/65" />
         <div className="relative z-10 text-center max-w-3xl px-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-5">About Me — and Why I Do This</h1>
-          <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">Level 4 personal trainer. Exercise referral specialist. Cancer rehabilitation qualified. I know first-hand what it feels like to start from zero.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-5">About Esther Fair — Cancer Rehabilitation Specialist</h1>
+          <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">Level 4 Personal Trainer. Cancer Rehabilitation Specialist. Exercise Referral Specialist. Specialist in rehabilitation and recovery training for complex health needs. I know first-hand what it feels like to start from zero.</p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button onClick={openDialog} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-7 py-3 rounded-full font-medium hover:opacity-90 transition-opacity">Book a Free Consultation</button>
             <a href="#story" className="inline-flex items-center gap-2 border border-primary-foreground/40 text-primary-foreground px-7 py-3 rounded-full font-medium hover:bg-primary-foreground/10 transition-colors">My Story</a>
@@ -47,9 +47,9 @@ export default function AboutPageClient() {
           <h2 className="text-3xl md:text-4xl text-foreground text-center mb-14">I Have Been Where You Are</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
             <div>
-              <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">I did not come to fitness from a place of confidence. There was a time when exercise felt inaccessible, intimidating, and simply not something that was meant for me. When that changed, it changed everything — my health, my mood, my sense of what was possible.</p>
-              <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">That experience is the reason I became a personal trainer. Not to help people lose weight or achieve an aesthetic ideal — but to help people feel stronger, more capable, and more at home in their own bodies.</p>
-              <p className="text-muted-foreground font-body text-base leading-relaxed mb-8">I qualified to Level 4 — the highest personal training qualification in the UK — specifically to work with people who have more complex needs: exercise referral, cancer rehabilitation, and clients whose situations have led other trainers to say they cannot help. Those are exactly the clients I am here for.</p>
+              <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">I did not come to fitness from a place of confidence. There was a time when exercise felt inaccessible, intimidating, and simply not something that was meant for me. When that changed, it changed everything — my health, my recovery, my sense of what my body was capable of.</p>
+              <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">That experience is the reason I became a personal trainer. Not to help people lose weight or achieve an aesthetic ideal — but to help people rehabilitate, recover, and feel stronger, more capable, and more functional in their own bodies, regardless of their health conditions or limitations.</p>
+              <p className="text-muted-foreground font-body text-base leading-relaxed mb-8">I qualified to Level 4 — the highest personal training qualification in the UK — and went further with specialist certifications in Cancer Rehabilitation and Exercise Referral. I specifically sought these qualifications to work with people who have more complex medical needs: cancer treatment survivors, those with chronic health conditions, post-surgical recovery, disabilities, and clients whose health situations have led other trainers to say they cannot help. Those are exactly the clients I am here for.</p>
               <button onClick={openDialog} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity">Book a Free Consultation <ArrowUpRight className="w-4 h-4" /></button>
             </div>
             <img src="/images/esther-about.jpg" alt="Esther Fair, personal trainer at Eternal Fitness Worthing" loading="lazy" className="rounded-2xl w-full h-[460px] object-cover" />
@@ -83,13 +83,13 @@ export default function AboutPageClient() {
           <div className="flex justify-center mb-6"><span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium">✦ Experience</span></div>
           <h2 className="text-3xl md:text-4xl text-foreground text-center mb-6">Experience Across the Full Range of Human Complexity</h2>
           <div className="max-w-3xl mx-auto text-center mb-14">
-            <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">Over the years, I have worked with clients that most personal trainers would not know how to support — people managing serious and complex health conditions, people going through cancer treatment, people with physical disabilities, clients with significant visual impairment, and people whose gender identity or physical goals do not fit neatly into the mainstream fitness mould.</p>
-            <p className="text-muted-foreground font-body text-base leading-relaxed">I mention this not to boast, but because you might be wondering whether your situation is too complicated, too unusual, or too much. It almost certainly is not. I treat every client as an individual, and every programme is built from scratch — with complete respect for whatever your body, health, identity, or history looks like.</p>
+            <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">Over the years, I have worked with clients that most personal trainers would not know how to support — cancer treatment survivors and people in recovery, people managing serious chronic health conditions (fibromyalgia, ME/CFS, autoimmune diseases, heart conditions), people in post-surgical or post-fracture rehabilitation, people with physical disabilities and mobility limitations, clients with significant visual impairment, people with neurological conditions (Parkinson's, MS, stroke recovery), and anyone whose health situation doesn't fit into mainstream fitness templates.</p>
+            <p className="text-muted-foreground font-body text-base leading-relaxed">I mention this not to boast, but because you might be wondering whether your situation is too complicated, too medically complex, or too much. It almost certainly is not. My Cancer Rehabilitation and Exercise Referral certifications equip me to work alongside your GP, specialist, and healthcare team. Every programme is built from scratch — with complete medical awareness and respect for whatever your body, health conditions, recovery status, or history looks like.</p>
           </div>
           <div className="flex justify-center">
             <div className="flex items-center gap-3 bg-accent/10 rounded-2xl px-6 py-4 max-w-xl">
               <Users className="w-5 h-5 text-accent shrink-0" />
-              <p className="text-foreground font-body text-base leading-relaxed">If you are wondering whether your situation is too complex — please get in touch. The answer is almost always yes, I can help.</p>
+              <p className="text-foreground font-body text-base leading-relaxed">If you are wondering whether your medical situation, cancer recovery, disability, or complex needs mean you cannot train — please get in touch. The answer is almost always yes, I can help. That is exactly what I specialise in.</p>
             </div>
           </div>
         </div>
@@ -102,8 +102,8 @@ export default function AboutPageClient() {
             <div>
               <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium mb-4">✦ Philosophy</span>
               <h2 className="text-3xl md:text-4xl text-foreground leading-tight mb-6">The Philosophy</h2>
-              <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">Eternal Fitness is not a weight loss service. It is not about transforming your body into something it is not. It is about finding out what your body is capable of — right now, with everything it is currently dealing with — and building steadily from there.</p>
-              <p className="text-muted-foreground font-body text-base leading-relaxed mb-6">The goal is not a six-week result. It is feeling stronger at sixty than you did at fifty. Being able to pick something up off the floor without pain. Having the energy to do the things you love. Moving through life with more ease and confidence than before. That takes time, consistency, and working with someone who genuinely understands your body and adjusts when things change. That is what I do.</p>
+              <p className="text-muted-foreground font-body text-base leading-relaxed mb-5">Eternal Fitness is not a weight loss service. It is not about transforming your body into something it is not. It is about rehabilitation and recovery — finding out what your body is capable of right now, with all the health conditions, medications, limitations, and recovery status it is currently dealing with — and building steadily from there.</p>
+              <p className="text-muted-foreground font-body text-base leading-relaxed mb-6">The goal is not a six-week result. It is returning to activities after cancer treatment. Being able to move with less pain. Having better fatigue management. Managing your chronic condition without fear. Recovering full function after injury. Climbing stairs. Walking further. Moving through life with more ease, capability, and confidence than before. That takes time, consistency, and working with someone who genuinely understands medical complexity and adjusts when your health or capacity changes. That is what I do.</p>
               <div className="bg-background rounded-2xl p-5 mb-6 border border-border shadow-md">
                 <h4 className="text-foreground mb-2">More Than a Workout</h4>
                 <p className="text-muted-foreground font-body text-base leading-relaxed">No weigh-ins. No before-and-after photos. No pressure to look a certain way. Just steady, meaningful progress — measured against your own baseline, not anyone else&apos;s.</p>
@@ -129,7 +129,7 @@ export default function AboutPageClient() {
           </div>
           <div className="bg-accent rounded-2xl p-6 md:p-8 max-w-2xl shadow-md">
             <h4 className="text-accent-foreground text-lg mb-2">Built for All Abilities</h4>
-            <p className="text-accent-foreground/80 font-body text-base leading-relaxed">The studio is set up to accommodate a wide range of abilities and mobility levels. Equipment is chosen to support functional movement — not performance aesthetics. The environment is deliberately calm, because the last thing most clients need is more noise.</p>
+            <p className="text-accent-foreground/80 font-body text-base leading-relaxed">The studio is set up specifically for people with disabilities, mobility limitations, and complex health needs. Equipment is chosen to support functional recovery and movement — not performance aesthetics. The environment is deliberately calm, because the last thing someone managing a health condition or in recovery needs is more pressure or noise.</p>
           </div>
         </div>
       </section>

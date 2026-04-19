@@ -5,7 +5,7 @@ import BlogPageClient from "./BlogPageClient";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Fitness & Health Blog — Eternal Fitness Worthing",
+  title: "Health Conditions & Cancer Recovery Blog",
   description: "Practical articles on training with health conditions, cancer rehabilitation, adaptive fitness, and moving well at any ability level. Written by Level 4 personal trainer Esther Fair.",
   alternates: { canonical: "https://eternalfitness.co.uk/blog" },
 };

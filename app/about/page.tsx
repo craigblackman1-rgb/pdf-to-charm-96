@@ -20,8 +20,8 @@ const aboutSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "About Esther Fair — Level 4 Personal Trainer in Worthing",
-  description: "Meet Esther Fair: Level 4 personal trainer, exercise referral specialist and cancer rehabilitation qualified. Private studio in Worthing, West Sussex. Specialist support for complex needs.",
+  title: "Esther Fair: Specialist in Cancer Rehab & Complex Health Needs",
+  description: "Meet Esther Fair: Cancer Rehabilitation & Exercise Referral Specialist. Level 4 qualified trainer for health conditions, disabilities, and complex needs.",
   alternates: { canonical: "https://eternalfitness.co.uk/about" },
 };
 
