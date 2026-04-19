@@ -32,12 +32,13 @@ interface BlogPostData {
 
 interface Props {
   post: BlogPostData;
+  relatedPosts: BlogPostData[];
   recentPosts: BlogPostData[];
   featuredPost: BlogPostData | null;
   popularPosts: BlogPostData[];
 }
 
-export default function BlogPostClient({ post, recentPosts, featuredPost, popularPosts }: Props) {
+export default function BlogPostClient({ post, relatedPosts, recentPosts, featuredPost, popularPosts }: Props) {
   const { open, setOpen, openDialog } = useConsultationDialog();
 
   const tocItems = useMemo(() => {
@@ -196,6 +197,26 @@ export default function BlogPostClient({ post, recentPosts, featuredPost, popula
                       </li>
                     ))}
                   </ul>
+                </div>
+              )}
+
+              {/* Related Posts */}
+              {relatedPosts.length > 0 && (
+                <div>
+                  <h4 className="font-bold text-foreground mb-4">Related Articles</h4>
+                  <div className="space-y-4">
+                    {relatedPosts.map((rp) => (
+                      <Link key={rp.id} href={`/blog/${rp.slug}`} className="flex items-center gap-3 group">
+                        <div className="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 bg-muted">
+                          <img src={rp.image_url || categoryImages[rp.category] || "/images/hero-gym.jpg"} alt={rp.title} className="w-full h-full object-cover" />
+                        </div>
+                        <div className="min-w-0">
+                          <p className="text-sm font-semibold text-foreground group-hover:text-accent transition-colors line-clamp-2">{rp.title}</p>
+                          <p className="text-xs text-muted-foreground mt-0.5">{rp.category}</p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               )}
 

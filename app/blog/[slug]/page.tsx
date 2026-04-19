@@ -16,6 +16,7 @@ interface BlogPostData {
   author_avatar: string | null;
   category: string;
   published_at: string;
+  updated_at: string;
   is_featured: boolean;
 }
 
@@ -62,19 +63,32 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
 
   if (!post) notFound();
 
+  // Get related posts from the same category/cluster
+  const relatedPosts = allPosts
+    .filter((p) => p.slug !== post.slug && p.category === post.category)
+    .slice(0, 3);
+
   const recentPosts = allPosts.filter((p) => p.slug !== post.slug).slice(0, 4);
   const featuredPost = allPosts.find((p) => p.is_featured && p.slug !== post.slug) ?? null;
   const popularPosts = allPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     headline: post.title,
     description: post.excerpt || "",
     image: post.image_url || "https://eternalfitness.co.uk/og-image.jpg",
     datePublished: post.published_at,
-    dateModified: post.published_at,
-    author: { "@type": "Person", name: post.author_name, url: "https://eternalfitness.co.uk/about" },
+    dateModified: post.updated_at || post.published_at,
+    author: {
+      "@type": "Person",
+      name: post.author_name === "Esther Fair" || post.author_name?.includes("Esther") ? "Esther Fair" : post.author_name,
+      url: "https://eternalfitness.co.uk/about",
+      organization: {
+        "@type": "Organization",
+        name: "Eternal Fitness"
+      }
+    },
     publisher: {
       "@type": "Organization",
       name: "Eternal Fitness",
@@ -89,7 +103,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <BlogPostClient post={post} recentPosts={recentPosts} featuredPost={featuredPost} popularPosts={popularPosts} />
+      <BlogPostClient post={post} relatedPosts={relatedPosts} recentPosts={recentPosts} featuredPost={featuredPost} popularPosts={popularPosts} />
     </>
   );
 }

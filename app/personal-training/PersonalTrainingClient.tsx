@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowUpRight, ChevronLeft, ChevronRight, ClipboardList, Search, BarChart3, HeartHandshake } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import CTASection from "@/components/CTASection";
@@ -91,10 +92,10 @@ export default function PersonalTrainingClient() {
         <div className="absolute inset-0 bg-hero-overlay/70" />
         <div className="relative z-10 text-center max-w-3xl px-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary-foreground leading-tight mb-5">
-            Personal Training in Worthing Built Around Your Body and Your Life
+            Cancer Rehabilitation and Recovery Training in Worthing
           </h1>
           <p className="text-primary-foreground/70 font-body text-base md:text-lg mb-8 max-w-xl mx-auto">
-            Private one-to-one sessions with a Level 4 specialist. Whether you have a complex health condition, a disability, an injury, or simply no idea where to start — there is a programme here for you.
+            Private one-to-one sessions with a Cancer Rehabilitation Specialist and Exercise Referral Specialist (Level 4 qualified). Whether you are in cancer treatment, post-surgery recovery, managing a chronic condition, living with a disability, or have complex medical needs — there is a specialist programme here for you.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <button
@@ -124,11 +125,11 @@ export default function PersonalTrainingClient() {
               <div className="flex gap-4 mb-6">
                 <img src="/images/approach-private.jpg" alt="Private one-to-one training session" loading="lazy" className="w-24 h-32 rounded-xl object-cover shrink-0" />
                 <p className="text-muted-foreground font-body text-sm leading-relaxed">
-                  Personal training at Eternal Fitness is not about pushing harder, going faster, or doing more. It is about finding what your body needs right now — and building a sustainable programme around that. Sessions are private, one-to-one, and held in a small studio in Worthing where there is no gym floor, no other clients watching, and no comparison to anyone else.
+                  Personal training at Eternal Fitness is not about pushing harder, going faster, or doing more. It is about rehabilitation, recovery, and what your body needs right now — whether managing a health condition, recovering from cancer treatment, or living with a disability — and building a sustainable programme around that. Sessions are private, one-to-one, and held in a small studio in Worthing where there is no gym floor, no other clients watching, and no comparison to anyone else.
                 </p>
               </div>
               <p className="text-muted-foreground font-body text-sm leading-relaxed mb-6">
-                My background in exercise referral and cancer rehabilitation means I am trained to adapt to medical conditions, medication effects, fatigue, and variable capacity. I do not guess — I ask, I listen, and I adjust.
+                My specialist training in cancer rehabilitation and exercise referral means I am trained to adapt to medical conditions, medication side-effects, fatigue cycles, and variable capacity. I work within your GP's or specialist's guidance. I do not guess — I ask, I listen, and I adjust every session based on your body's actual needs that day.
               </p>
               <button
                 onClick={openDialog}
@@ -177,10 +178,10 @@ export default function PersonalTrainingClient() {
                 What I Work On
               </span>
               <h2 className="text-3xl md:text-4xl text-primary-foreground leading-tight mb-4">
-                Strength and Capability for Real Life
+                Recovery and Rehabilitation for Real Life
               </h2>
               <p className="text-primary-foreground/70 font-body text-base mb-6">
-                The focus is functional — building strength, mobility, and stamina that improves day-to-day life. Not aesthetics. Not performance metrics. Real outcomes: carrying shopping, climbing stairs, walking further, sleeping better, managing pain, regaining confidence in your own body.
+                The focus is functional rehabilitation — building strength, mobility, endurance, and capability for real life during and after health conditions. Not aesthetics. Not performance metrics. Real outcomes: returning to activities after cancer treatment, climbing stairs without pain, managing fatigue, walking further, recovering independence, sleeping better, regaining confidence in your own body.
               </p>
               <div className="flex gap-2">
                 <button className="w-10 h-10 rounded-full border border-primary-foreground/30 flex items-center justify-center text-primary-foreground hover:bg-primary-foreground/10 transition-colors">
@@ -241,6 +242,68 @@ export default function PersonalTrainingClient() {
             >
               Book a Free Consultation <ArrowUpRight className="w-4 h-4" />
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Blog Articles */}
+      <section className="py-20 md:py-28 px-6 md:px-12 bg-muted">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <span className="inline-flex items-center gap-2 bg-accent/10 text-accent px-4 py-1.5 rounded-full text-sm font-medium mb-4">
+              Learn More
+            </span>
+            <h2 className="text-3xl md:text-4xl text-foreground mb-4">Related Articles</h2>
+            <p className="text-muted-foreground font-body text-base max-w-2xl mx-auto">
+              Read more about training with health conditions, recovery strategies, and what makes specialist personal training different.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <Link href="/blog/exercise-illness" className="group">
+              <div className="bg-background rounded-2xl overflow-hidden shadow-md h-full flex flex-col">
+                <div className="bg-gradient-to-br from-accent/20 to-accent/10 h-40 flex items-center justify-center">
+                  <span className="text-4xl">💪</span>
+                </div>
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-foreground font-bold mb-2 group-hover:text-accent transition-colors">Exercise & Illness</h3>
+                  <p className="text-muted-foreground text-sm mb-4 flex-1">Understanding how to stay active during health challenges and what's safe when managing chronic conditions.</p>
+                  <div className="text-accent text-sm font-semibold hover:underline">Read Article →</div>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/blog/menopause-and-exercise" className="group">
+              <div className="bg-background rounded-2xl overflow-hidden shadow-md h-full flex flex-col">
+                <div className="bg-gradient-to-br from-accent/20 to-accent/10 h-40 flex items-center justify-center">
+                  <span className="text-4xl">🏃</span>
+                </div>
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-foreground font-bold mb-2 group-hover:text-accent transition-colors">Menopause & Exercise</h3>
+                  <p className="text-muted-foreground text-sm mb-4 flex-1">How to train effectively through hormonal changes and manage strength, mobility, and energy during midlife transitions.</p>
+                  <div className="text-accent text-sm font-semibold hover:underline">Read Article →</div>
+                </div>
+              </div>
+            </Link>
+
+            <Link href="/blog/myth-buster-does-resistance-training-cause-high-blood-pressure" className="group">
+              <div className="bg-background rounded-2xl overflow-hidden shadow-md h-full flex flex-col">
+                <div className="bg-gradient-to-br from-accent/20 to-accent/10 h-40 flex items-center justify-center">
+                  <span className="text-4xl">❤️</span>
+                </div>
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-foreground font-bold mb-2 group-hover:text-accent transition-colors">Resistance Training & Blood Pressure</h3>
+                  <p className="text-muted-foreground text-sm mb-4 flex-1">Safety considerations for people managing cardiovascular health and how resistance training can be part of a healthy approach.</p>
+                  <div className="text-accent text-sm font-semibold hover:underline">Read Article →</div>
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="text-center">
+            <Link href="/blog" className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3 rounded-full font-medium hover:bg-background transition-colors">
+              View All Articles <ArrowUpRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
